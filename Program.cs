@@ -2,7 +2,7 @@
 Console.WriteLine("Hello");
 Console.WriteLine("Andra");
 
-int x = 5;
+int x = 5;      // Am declarat variabila de tip int si i-am asignat valoarea 5
 int y = 101;
 int suma = x + y;
 string gigi = "ana are mere";
@@ -18,11 +18,11 @@ double d = 2.1;
 double impartire = c/d;
 Console.WriteLine("Impartirea dintre {0} si {1} este {2:0.000}", c, d,impartire);
 
-int p = -5 + 8 * 6;
-Console.WriteLine("Rezultat = {0}", p);
+int p = -5 + 8 * 6;     // Am declarat variabila de tip int p si am initializat-o cu o expresie
+Console.WriteLine("Rezultat = {0}", p); 
 
 
-x = -5;
+x = -5;     // Am asignat valoarea -5 variabilei x
 y = 8;
 int tx = 6;
 int rezultat = x + y * tx;
@@ -30,7 +30,7 @@ Console.WriteLine(rezultat);
 
 
 int l = (55 + 9) % 9;
-Console.WriteLine("Rezultatul este = {0}", l);
+Console.WriteLine("Rezultatul este = {0}", l);      // Afisez valoarea variabilei l
 
 int h = 20 + -3 * 5 / 8; 
 Console.WriteLine("Rezultatul este = {0}", h);
