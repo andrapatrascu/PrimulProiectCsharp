@@ -37,3 +37,7 @@ Console.WriteLine("Rezultatul este = {0}", h);
 
 int gt = 5 + 15 / 3 * 2 - 8 % 3;
 Console.WriteLine("Rezultatul este = {0}", gt);
+
+string name = "John";
+Console.WriteLine("Numele este {0} si varsta lui este {1}",name, gt);
+
