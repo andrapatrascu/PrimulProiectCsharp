@@ -40,3 +40,23 @@ Console.WriteLine("Result is = {0}", gt);
 string name = "John";
 Console.WriteLine("The name is {0} and his age is {1}",name, gt);
 
+
+string productName = "TV";
+Console.WriteLine("The productName is {0} ", productName);
+
+
+int productYear = 2012;
+Console.WriteLine("The productYear value is {0} ", productYear);
+
+float productPrice = 279.99f;
+Console.WriteLine("The productPrice value is {0} ", productPrice);
+Console.WriteLine(productPrice);
+
+string priceAsString = Convert.ToString(productPrice);
+Console.WriteLine("The productPrice value is {0} ", priceAsString);
+Console.WriteLine(priceAsString);
+
+double varDouble = 99.2435;
+int varInt = Convert.ToInt32(varDouble);
+Console.WriteLine("varDouble = {0}, varInt = {1}", varDouble, varInt);
+
