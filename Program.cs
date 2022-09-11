@@ -2,7 +2,7 @@
 Console.WriteLine("Hello");
 Console.WriteLine("Andra");
 
-int x = 5;      // Am declarat variabila de tip int si i-am asignat valoarea 5
+int x = 5;      // declared variable of type int and initialized it with the value 5
 int y = 101;
 int suma = x + y;
 string gigi = "ana are mere";
