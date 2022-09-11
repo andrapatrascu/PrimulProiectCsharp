@@ -4,40 +4,39 @@ Console.WriteLine("Andra");
 
 int x = 5;      // declared variable of type int and initialized it with the value 5
 int y = 101;
-int suma = x + y;
-string gigi = "ana are mere";
-Console.WriteLine("suma dintre {0} si {1} este {2} si totodata {3}", x, y, suma, gigi);
+int sum = x + y;
+string gigi = "Ana are mere";
+Console.WriteLine("the sum of {0} and {1} is {2} and also {3}", x, y, sum, gigi);
 
 double z = 5.4;
 double t = 10100.56;
-double a_doua_suma = z+t;
-Console.WriteLine(a_doua_suma);
+double the_second_sum = z+t;
+Console.WriteLine(the_second_sum);
 
 double c = 5.4;
 double d = 2.1;
-double impartire = c/d;
-Console.WriteLine("Impartirea dintre {0} si {1} este {2:0.000}", c, d,impartire);
+double division = c/d;
+Console.WriteLine("The division between {0} and {1} is {2:0.000}", c, d,division);
 
-int p = -5 + 8 * 6;     // Am declarat variabila de tip int p si am initializat-o cu o expresie
-Console.WriteLine("Rezultat = {0}", p); 
+int p = -5 + 8 * 6;     // declared variable of type int and initialized it with an expression
 
 
-x = -5;     // Am asignat valoarea -5 variabilei x
+x = -5;     // assigned value -5 to variable x
 y = 8;
 int tx = 6;
-int rezultat = x + y * tx;
-Console.WriteLine(rezultat);
+int result = x + y * tx;
+Console.WriteLine(result);
 
 
 int l = (55 + 9) % 9;
-Console.WriteLine("Rezultatul este = {0}", l);      // Afisez valoarea variabilei l
+Console.WriteLine("Result is = {0}", l);      //display the value of variable l
 
 int h = 20 + -3 * 5 / 8; 
-Console.WriteLine("Rezultatul este = {0}", h);
+Console.WriteLine("Result is = {0}", h);
 
 int gt = 5 + 15 / 3 * 2 - 8 % 3;
-Console.WriteLine("Rezultatul este = {0}", gt);
+Console.WriteLine("Result is = {0}", gt);
 
 string name = "John";
-Console.WriteLine("Numele este {0} si varsta lui este {1}",name, gt);
+Console.WriteLine("The name is {0} and his age is {1}",name, gt);
 
