@@ -60,3 +60,15 @@ double varDouble = 99.10;
 int varInt = Convert.ToInt32(varDouble);
 Console.WriteLine("varDouble = {0}, varInt = {1}", varDouble, varInt);
 
+string FirstName= "John";
+Console.WriteLine("The FirstName is {0}", FirstName);
+Console.WriteLine(FirstName);
+
+string LastName = "Turturo";
+Console.WriteLine( "Hello" + " " + LastName);
+
+string Name1 = "Clark";
+string Name2 = "Pall";
+string fullName= Name1 + " " + Name2;
+Console.WriteLine(fullName);
+Console.WriteLine("The fullName is {0} {1}",Name1,Name2);
