@@ -56,7 +56,7 @@ string priceAsString = Convert.ToString(productPrice);
 Console.WriteLine("The productPrice value is {0} ", priceAsString);
 Console.WriteLine(priceAsString);
 
-double varDouble = 99.2435;
+double varDouble = 99.10;
 int varInt = Convert.ToInt32(varDouble);
 Console.WriteLine("varDouble = {0}, varInt = {1}", varDouble, varInt);
 
