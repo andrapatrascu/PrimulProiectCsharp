@@ -72,3 +72,18 @@ string Name2 = "Pall";
 string fullName= Name1 + " " + Name2;
 Console.WriteLine(fullName);
 Console.WriteLine("The fullName is {0} {1}",Name1,Name2);
+
+int MyNum = 15;
+MyNum = 20;// MyNum is 20 now
+Console.WriteLine(MyNum);
+Console.WriteLine("The MyNum is {0}", MyNum);
+
+double MyDoubleNumber = -19.99;
+Console.WriteLine(MyDoubleNumber);
+Console.WriteLine($"The MyDoubleNumber is {MyDoubleNumber}");
+
+bool yay = true;
+bool nay = false;
+Console.WriteLine(yay);
+
+
