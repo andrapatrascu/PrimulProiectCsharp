@@ -66,6 +66,12 @@ Console.WriteLine("varDouble = {0}, varInt = {1}", varDouble, varInt);
 CarType carType = CarType.Ford;
 Console.WriteLine($"cart type is {carType}");
 
+Vegetables vegetables;
+Console.WriteLine(Vegetables.Onion);
+Console.WriteLine(Vegetables.AsianGreens);
+
+
+
 
 
 
