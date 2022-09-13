@@ -105,4 +105,8 @@ bool yay = true;
 bool nay = false;
 Console.WriteLine(yay);
 
+int xza = 5;
+int ytd = 6;
+Console.WriteLine(xza + ytd);
+
 
