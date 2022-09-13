@@ -66,6 +66,8 @@ Console.WriteLine("varDouble = {0}, varInt = {1}", varDouble, varInt);
 CarType carType = CarType.Ford;
 Console.WriteLine($"cart type is {carType}");
 
+Console.WriteLine(CarType.Honda);
+
 
 
 
