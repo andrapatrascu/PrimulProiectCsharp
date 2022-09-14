@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace PrimulProiectCsharp;
 
-namespace PrimulProiectCsharp
+public enum Vegetables
 {
-    public enum Vegetables
-    {
-        Onion,
-        Tomato,
-        Potato,
-        AsianGreens
-    }
+    Onion,
+    Tomato,
+    Potato,
+    AsianGreens,
+    Beans
 }
