@@ -21,9 +21,6 @@ double d = 2.1;
 double division = c / d;
 Console.WriteLine("The division between {0} and {1} is {2:0.000}", c, d, division);
 
-int p = -5 + 8 * 6;     // declared variable of type int and initialized it with an expression
-
-
 x = -5;     // assigned value -5 to variable x
 y = 8;
 int tx = 6;
@@ -70,13 +67,6 @@ Console.WriteLine(CarType.Honda);
 
 Console.WriteLine(Vegetables.Onion);
 Console.WriteLine(Vegetables.AsianGreens);
-
-
-
-
-
-
-
 
 string FirstName= "John";
 Console.WriteLine("The FirstName is {0}", FirstName);
