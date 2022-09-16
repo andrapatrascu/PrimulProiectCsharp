@@ -68,7 +68,6 @@ Console.WriteLine($"cart type is {carType}");
 
 Console.WriteLine(CarType.Honda);
 
-Vegetables vegetables;
 Console.WriteLine(Vegetables.Onion);
 Console.WriteLine(Vegetables.AsianGreens);
 
@@ -92,8 +91,7 @@ string fullName= Name1 + " " + Name2;
 Console.WriteLine(fullName);
 Console.WriteLine("The fullName is {0} {1}",Name1,Name2);
 
-int MyNumber = 15;
-MyNumber = 20;// MyNum is 20 now
+var MyNumber = 20;
 Console.WriteLine(MyNumber);
 Console.WriteLine("The MyNum is {0}", MyNumber);
 
