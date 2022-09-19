@@ -78,18 +78,18 @@ Console.WriteLine(Vegetables.AsianGreens);
 
 
 
-string FirstName= "John";
+string FirstName = "John";
 Console.WriteLine("The FirstName is {0}", FirstName);
 Console.WriteLine(FirstName);
 
 string LastName = "Turturo";
-Console.WriteLine( "Hello" + " " + LastName);
+Console.WriteLine("Hello" + " " + LastName);
 
 string Name1 = "Clark";
 string Name2 = "Pall";
-string fullName= Name1 + " " + Name2;
+string fullName = Name1 + " " + Name2;
 Console.WriteLine(fullName);
-Console.WriteLine("The fullName is {0} {1}",Name1,Name2);
+Console.WriteLine("The fullName is {0} {1}", Name1, Name2);
 
 var MyNumber = 20;
 Console.WriteLine(MyNumber);
@@ -104,3 +104,6 @@ bool nay = false;
 Console.WriteLine(yay);
 
 
+Console.WriteLine("Sum of 3+4 is " + 3 + 4);
+Console.WriteLine("10 divided by 4 is " + 10 / 4);
+Console.WriteLine("25-7 is " + (25 - 7));
