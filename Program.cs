@@ -183,40 +183,41 @@ Console.WriteLine(Result11);
 //Unary operators
 
 int Number17 = 10, Result12;
-bool flag = true;
+
 Result12 = +Number17; // unary plus
 Console.WriteLine("+Number17 = " + Result12);
 
 int Number18 = 10, Result13;
-bool flag1 = true;
 Result13 = -Number18; // unary minus
 Console.WriteLine("-Number18 = " + Result13);
 
 int Number19= 10, Result14;
-bool flag2 = true;
 Result14 = ++Number19; // increment
 Console.WriteLine("++Number18 = " + Result14);
 
 int Number20 = 10, Result15;
-bool flag3 = true;
 Result15 = --Number20; // decrement
 Console.WriteLine("--Number18 = " + Result15);
 
+var flag = false;
+Console.WriteLine("Inverts the value of a boolean = {0}  " , !flag);
+
 
 int Number21 = 10;
-Console.WriteLine((Number21++)); // posfix
-Console.WriteLine((Number21));
+Console.WriteLine("Number is {0}", Number21++); // postfix
+//Console.WriteLine((Number21)); 
 
 int Number22 = 20;
-Console.WriteLine((++Number22)); // prefix
-Console.WriteLine((Number22));
+Console.WriteLine("Number is {0}", ++Number22); // prefix
+//Console.WriteLine((Number22));
 
 //Ternary operator
 
 int Number23 = 10;
+int Number30 = 2; 
 string Result16;
-Result16 = (Number23 / 2 == 0) ? "Even Number23" : "Odd Number"; // the result is "Odd Number"
-Console.WriteLine("{0} is {1}", Number23, Result16);
+Result16 = (Number23 / Number30 == 0) ? "Even Number23" : "Odd Number"; // the result is "Odd Number"
+Console.WriteLine(" The result is {0}, because {1} divide by is not 0 ", Result16, Number23, Number30);
 
 int Number24 = 10;
 string Result17;
