@@ -270,3 +270,23 @@ Console.WriteLine(Result21);
 int J = 5, K = 6, L = 3;
 int Result23 = J = K = L;
 Console.WriteLine("J = {0}, K = {1}, L = {2}", J, K, L);
+
+
+//Operators recap
+H = 7364;
+bool comparisonResult = H > 9;
+string MessageText = comparisonResult ? "greater" : "smaller";
+Console.WriteLine(MessageText);
+
+int Operand1 = 299;
+int Operand2 = 9;
+comparisonResult = Operand1 > Operand2;
+MessageText = comparisonResult ? "greater" : "smaller";
+Console.WriteLine("The value {0} is {1} than {2}", Operand1, MessageText, Operand2);
+
+Console.WriteLine(Result23);
+Console.WriteLine("The result is {0}", Result23);
+Console.WriteLine($"The result is { Result23 }");
+
+string test = Result23.ToString();
+Console.WriteLine("The result is {0}", test);
