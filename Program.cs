@@ -290,3 +290,37 @@ Console.WriteLine($"The result is { Result23 }");
 
 string test = Result23.ToString();
 Console.WriteLine("The result is {0}", test);
+
+int Var1 = 19, Var2 = 11, Var3 = 13;
+int sum10 = Var1 + Var3;
+int difference = Var1 - Var3;
+
+// if var1 > var2, calculate the sum betwen var1 and var3 else the difference
+bool comparisonResult2 = Var1 > Var2;
+
+int rezultatFinal = comparisonResult2 ? sum10 : difference;
+string AnotherMessageText = comparisonResult2 ? "sum" : "difference";
+string ComparisonMessage = comparisonResult2 ? "greater" : "smaller";
+
+Console.WriteLine("Var1 that has value {0} is {1} than Var2 that has value {2} and the {3} is {4}",
+    Var1, ComparisonMessage, Var2,AnotherMessageText, rezultatFinal);
+
+//Write a program to calculate (A+B)^2
+int Alpha = 2;
+int Beta = 10;
+int SumOfAlphaAndBeta = Alpha + Beta;
+Console.WriteLine("The result of raisind at the second power is {0}", SumOfAlphaAndBeta * SumOfAlphaAndBeta);
+
+int Teta = Beta;
+Console.WriteLine("Teta = {0}, Beta = {1}", Teta, Beta);
+Console.WriteLine($"Teta = {Teta}, Beta = {Beta}");
+Console.WriteLine($" {Teta}, {Beta}");
+
+//There are 100 boxes.Calculate how much( in percentage) do 37 boxes represent out of the total number of boxes.
+
+double TotalAmountOfBoxes = 6311;
+double PartialAmountOfBoxes = 379;
+double PercentageResult = (PartialAmountOfBoxes * 100) / TotalAmountOfBoxes;
+Console.WriteLine("Percentage is {0}",PercentageResult);
+
+// calculate the area of the circle (a = pi * radius^2)
