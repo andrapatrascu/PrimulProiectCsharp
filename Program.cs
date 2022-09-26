@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using PrimulProiectCsharp;
+using System.Globalization;
+using PrimulProiectCsharp.Models;
 
 Console.WriteLine("Hello");
 Console.WriteLine("Andra");
@@ -13,8 +14,8 @@ Console.WriteLine("the sum of {0} and {1} is {2} and also {3}", x, y, sum, gigi)
 
 double z = 5.4;
 double t = 10100.56;
-double the_second_sum = z + t;
-Console.WriteLine(the_second_sum);
+double secondSum = z + t;
+Console.WriteLine(secondSum);
 
 double c = 5.4;
 double d = 2.1;
@@ -52,7 +53,7 @@ float productPrice = 279.99f;
 Console.WriteLine("The productPrice value is {0} ", productPrice);
 Console.WriteLine(productPrice);
 
-string priceAsString = Convert.ToString(productPrice);
+string priceAsString = Convert.ToString(productPrice, CultureInfo.InvariantCulture);
 Console.WriteLine("The productPrice value is {0} ", priceAsString);
 Console.WriteLine(priceAsString);
 
@@ -68,7 +69,7 @@ Console.WriteLine(CarType.Honda);
 Console.WriteLine(Vegetables.Onion);
 Console.WriteLine(Vegetables.AsianGreens);
 
-string FirstName= "John";
+string FirstName = "John";
 Console.WriteLine("The FirstName is {0}", FirstName);
 Console.WriteLine(FirstName);
 
@@ -105,13 +106,13 @@ Console.WriteLine(xza + ytd);
 double ty;
 ty = 100.20; // 100.20 is assign to ty
 Console.WriteLine(ty);
-Console.WriteLine("The number is {0}",ty);
+Console.WriteLine("The number is {0}", ty);
 
 int Number1, Number2;
 Number1 = 25;
 Number2 = 30;
 Console.WriteLine(Number1);
-Console.WriteLine("Number1 is {0} and Number2 is {1}", Number1,Number2);
+Console.WriteLine("Number1 is {0} and Number2 is {1}", Number1, Number2);
 
 double Number3, Number4;
 Number3 = 50.50;
@@ -120,7 +121,7 @@ Console.WriteLine("Number4 is {0}", Number4);
 
 //Arithmetic operators
 
-double Number5 = 10.20D, Number6 = 45.87D , Result;
+double Number5 = 10.20D, Number6 = 45.87D, Result;
 Result = Number5 + Number6; // addition operation
 Console.WriteLine("{0} + {1} = {2}", Number5, Number6, Result);
 
@@ -129,11 +130,11 @@ Result1 = Number7 - Number8; // substraction operation
 Console.WriteLine("{0} - {1} = {2}", Number7, Number8, Result1);
 
 double Number9 = 10.20, Number10 = 0.5, Result2;
-Result2= Number9 * Number10; // mutiplication operation
+Result2 = Number9 * Number10; // mutiplication operation
 Console.WriteLine("{0} * {1} = {2}", Number9, Number10, Result2);
 
 double Number11 = 10.20, Number12 = 0.5, Result3;
-Result3= Number11 / Number12; // division operation
+Result3 = Number11 / Number12; // division operation
 Console.WriteLine("{0} / {1} = {2}", Number11, Number12, Result3);
 
 //Relational operators
@@ -159,8 +160,8 @@ Result7 = FirstNumber4 >= SecondNumber4;// greater than
 Console.WriteLine("{0} >= {1} returns {2}", FirstNumber4, SecondNumber4, Result7);
 
 bool Result8;
-int FirstNumber5= 10, SecondNumber5 = 20;
-Result8= FirstNumber5 <= SecondNumber5;// less than
+int FirstNumber5 = 10, SecondNumber5 = 20;
+Result8 = FirstNumber5 <= SecondNumber5;// less than
 Console.WriteLine("{0} <= {1} returns {2}", FirstNumber5, SecondNumber5, Result8);
 
 bool Result9;
@@ -170,14 +171,13 @@ Console.WriteLine("{0} != {1} returns {2}", FirstNumber6, SecondNumber6, Result9
 
 // Logical operators
 
-bool Result10;
-int Number13 = 10, Number14 = 20;
-Result10 = (Number13 == Number14) || (Number13 > 5); // using OR operator
-Console.WriteLine(Result10);
+const int number13 = 10;
+int Number14 = 20;
+var result10 = number13 == Number14 || number13 > 5;
+Console.WriteLine(result10);
 
-bool Result11;
 int Number15 = 10, Number16 = 20;
-Result11 = (Number15 == Number16) && (Number15 > 5); // using AND operator
+var Result11 = Number15 == Number16 && Number15 > 5;
 Console.WriteLine(Result11);
 
 //Unary operators
@@ -191,7 +191,7 @@ int Number18 = 10, Result13;
 Result13 = -Number18; // unary minus
 Console.WriteLine("-Number18 = " + Result13);
 
-int Number19= 10, Result14;
+int Number19 = 10, Result14;
 Result14 = ++Number19; // increment
 Console.WriteLine("++Number18 = " + Result14);
 
@@ -200,7 +200,7 @@ Result15 = --Number20; // decrement
 Console.WriteLine("--Number18 = " + Result15);
 
 var flag = false;
-Console.WriteLine("Inverts the value of a boolean = {0}  " , !flag);
+Console.WriteLine("Inverts the value of a boolean = {0}  ", !flag);
 
 
 int Number21 = 10;
@@ -214,14 +214,14 @@ Console.WriteLine("Number is {0}", ++Number22); // prefix
 //Ternary operator
 
 int Number23 = 10;
-int Number30 = 2; 
+int Number30 = 2;
 string Result16;
-Result16 = (Number23 / Number30 == 0) ? "Even Number23" : "Odd Number"; // the result is "Odd Number"
+Result16 = Number23 / Number30 == 0 ? "Even Number23" : "Odd Number"; // the result is "Odd Number"
 Console.WriteLine(" The result is {0}, because {1} divide by is not 0 ", Result16, Number23, Number30);
 
 int Number24 = 10;
 string Result17;
-Result17 = (Number24 / 2 >= 0) ? "Even Number24" : "Odd Number"; // the result is "Even Number24"
+Result17 = Number24 / 2 >= 0 ? "Even Number24" : "Odd Number"; // the result is "Even Number24"
 Console.WriteLine("{0} is {1}", Number24, Result17);
 
 //Compound Assignment Operators
@@ -260,11 +260,11 @@ Console.WriteLine(Result19);
 //Associativity of Operators-if both the operators have same precedence,the expression is evaluated based on the associativity of operator (left to right or right to left).
 
 int D = 5, E = 6, F = 3;
-int Result20 = D * E/ F;
+int Result20 = D * E / F;
 Console.WriteLine(Result20);
 
 int G = 5, H = 6, I = 3;
-int Result21= G = H = I; //The associativity of = operator is from right to left
+int Result21 = G = H = I; //The associativity of = operator is from right to left
 Console.WriteLine(Result21);
 
 int J = 5, K = 6, L = 3;
