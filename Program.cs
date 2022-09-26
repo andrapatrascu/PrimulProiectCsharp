@@ -324,3 +324,76 @@ double PercentageResult = (PartialAmountOfBoxes * 100) / TotalAmountOfBoxes;
 Console.WriteLine("Percentage is {0}",PercentageResult);
 
 // calculate the area of the circle (a = pi * radius^2)
+
+
+// if-then statement
+
+
+int CompoundNumber = 10;
+CompoundNumber += 5;
+Console.WriteLine(CompoundNumber);
+Console.WriteLine("The number is {0}",CompoundNumber);
+Console.WriteLine($"The number = {CompoundNumber}");
+
+if (Var1 < 5)
+{
+    Var1 += 5;
+}
+Console.WriteLine(Var1);
+
+
+int Number50 = 14;
+if (Number50 < 5)
+{
+	Console.WriteLine("{0} is less than 5", Number50);
+}
+
+Console.WriteLine("This statement is always executed.");
+
+if (20 > 18)
+{
+    Console.WriteLine("20 is greater than 18");
+}
+
+int X1 = 20;
+int Y1= 18;
+if (X1 > Y1);
+{
+    Console.WriteLine("X1 is greater than Y1");
+}
+
+
+
+//if..else ( if-then-else)
+
+if (Var2 < 5 )
+{
+    Var2 += 5;
+}
+else
+{
+    Var2 -= 5;
+}
+Console.WriteLine(Var2);
+
+
+int Number41 = 3;
+if (Number41 < 5)
+{
+	Console.WriteLine("{0} is less than 5", Number41);
+}
+else
+{
+	Console.WriteLine("{0} is greater than or equal to 5", Number41);
+}
+
+Console.WriteLine("This statement is always executed.");
+
+int time = 02;
+if (time < 18)
+{
+    Console.WriteLine("Good day.");
+}
+else
+{
+    Console.WriteLine("Good evening.");}
