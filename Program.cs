@@ -326,7 +326,7 @@ Console.WriteLine("Percentage is {0}",PercentageResult);
 // calculate the area of the circle (a = pi * radius^2)
 
 
-// if-then statement
+// if-then statement statement
 
 
 int CompoundNumber = 10;
@@ -364,7 +364,7 @@ if (X1 > Y1);
 
 
 
-//if..else ( if-then-else)
+//if..else ( if-then-else)  statment
 
 if (Var2 < 5 )
 {
@@ -396,4 +396,95 @@ if (time < 18)
 }
 else
 {
-    Console.WriteLine("Good evening.");}
+    Console.WriteLine("Good evening.");
+}
+
+
+//if...else if (if-then -else if) Statement
+
+int Number42 = 12;
+
+if (Number42 < 5)
+{
+	Console.WriteLine("{0} is less than 5", Number42);
+}
+else if (Number42 > 5)
+{
+	Console.WriteLine("{0} is greater than 5", Number42);
+}
+else
+{
+	Console.WriteLine("{0} is equal to 5");
+
+}
+
+int Time1 = 22;
+
+if (Time1 < 10)
+{
+	Console.WriteLine("Good morning.", Time1);
+}
+else if (Time1 < 20)
+{
+	Console.WriteLine("Good day.", Time1);
+}
+else
+{
+	Console.WriteLine("Good evening");
+
+}
+
+int Time2 = 20;
+string Result30 = (Time2 < 18) ? "Good day." : "Good evening.";
+Console.WriteLine(Result30);
+
+
+//Nested if...else Statement
+
+int NestedNumber1 = 7, NestedNumber2 = -23, NestedNumber3 = 13;
+if (NestedNumber1 > NestedNumber2)
+{
+	if (NestedNumber1 > NestedNumber3)
+	{
+		Console.WriteLine("{0} is the largest", NestedNumber1);
+	}
+	else
+	{
+		Console.WriteLine("{0} is the largest", NestedNumber3);
+	}
+}
+else
+{
+	if (NestedNumber2 > NestedNumber3)
+	{
+		Console.WriteLine("{0} is the largest", NestedNumber2);
+	}
+	else
+	{
+		Console.WriteLine("{0} is the largest", NestedNumber3);
+	}
+}
+
+//Write a C# Sharp program to accept two integers and check whether they are equal or not
+
+int Number35 = 5;
+int Number36 = 5; 
+if (Number35 != Number36)
+{
+	Console.WriteLine("{0} and {1} are not equal.", Number35, Number36);
+}
+else
+{
+	Console.WriteLine("{0} and {0} are equal.", Number35, Number36);
+}
+
+int Number37 = 5;
+int Number38 = 5;
+if (Number37 == Number38)
+{
+	Console.WriteLine("{0} and {1} are  equal.", Number37, Number38);
+}
+else
+{
+	Console.WriteLine("{0} and {0} are not equal.", Number37, Number38);
+}
