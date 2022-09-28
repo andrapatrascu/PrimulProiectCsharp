@@ -1,4 +1,4 @@
-﻿namespace PrimulProiectCsharp;
+﻿namespace PrimulProiectCsharp.Models;
 
 internal enum CarType
 {
