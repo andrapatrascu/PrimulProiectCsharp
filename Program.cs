@@ -91,7 +91,6 @@ Console.WriteLine(MyDoubleNumber);
 Console.WriteLine($"The MyDoubleNumber is {MyDoubleNumber}");
 
 bool yay = true;
-bool nay = false;
 Console.WriteLine(yay);
 
 int xza = 5;
@@ -270,3 +269,80 @@ Console.WriteLine(Result21);
 int J = 5, K = 6, L = 3;
 int Result23 = J = K = L;
 Console.WriteLine("J = {0}, K = {1}, L = {2}", J, K, L);
+
+
+//Operators recap
+H = 7364;
+bool comparisonResult = H > 9;
+string MessageText = comparisonResult ? "greater" : "smaller";
+Console.WriteLine(MessageText);
+
+int Operand1 = 299;
+int Operand2 = 9;
+comparisonResult = Operand1 > Operand2;
+MessageText = comparisonResult ? "greater" : "smaller";
+Console.WriteLine("The value {0} is {1} than {2}", Operand1, MessageText, Operand2);
+
+Console.WriteLine(Result23);
+Console.WriteLine("The result is {0}", Result23);
+Console.WriteLine($"The result is { Result23 }");
+Console.WriteLine("The result is " + Result23);
+
+string test = Result23.ToString();
+Console.WriteLine("The result is {0}", test);
+
+int Var1 = 19, Var2 = 8, Var3 = 11;
+int sum10 = Var1 + Var3;
+int difference = Var1 - Var3;
+
+// if var1 > var2, calculate the sum betwen var1 and var3 else the difference
+bool comparisonResult2 = Var1 > Var2;
+
+int rezultatFinal = comparisonResult2 ? sum10 : difference;
+string AnotherMessageText = comparisonResult2 ? "sum" : "difference";
+string ComparisonMessage = comparisonResult2 ? "greater" : "smaller";
+
+Console.WriteLine("Var1 that has value {0} is {1} than Var2 that has value {2} and the {3} is {4}",
+    Var1, ComparisonMessage, Var2, AnotherMessageText, rezultatFinal);
+
+if (comparisonResult2)
+{
+    Console.WriteLine("The sum between Var1 and Var3 is {0}", sum10);
+}
+else
+{
+    Console.WriteLine("The difference between Var1 and Var3 " + difference);
+}
+
+if (comparisonResult2)
+{
+    Console.WriteLine("The sum between Var1 and Var3 " + (Var1 + Var3));
+}
+else
+{
+    Console.WriteLine("The difference between Var1 and Var3 " + (Var1 - Var3));
+}
+
+//Write a program to calculate (A+B)^2
+int Alpha = 2;
+int Beta = 10;
+int SumOfAlphaAndBeta = Alpha + Beta;
+Console.WriteLine("The result of raisind at the second power is {0}", SumOfAlphaAndBeta * SumOfAlphaAndBeta);
+
+int Teta = Beta;
+Console.WriteLine("Teta = {0}, Beta = {1}", Teta, Beta);
+Console.WriteLine($"Teta = {Teta}, Beta = {Beta}");
+Console.WriteLine($" {Teta}, {Beta}");
+Console.WriteLine("The result is " + (SumOfAlphaAndBeta * SumOfAlphaAndBeta));
+
+
+//There are 100 boxes.Calculate how much( in percentage) do 37 boxes represent out of the total number of boxes.
+
+double TotalAmountOfBoxes = 6311;
+double PartialAmountOfBoxes = 379;
+double PercentageResult = (PartialAmountOfBoxes * 100) / TotalAmountOfBoxes;
+Console.WriteLine("Percentage is {0}", PercentageResult);
+
+// calculate the area of the circle (a = pi * radius^2)
+
+
