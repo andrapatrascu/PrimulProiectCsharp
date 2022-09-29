@@ -344,5 +344,3 @@ double PercentageResult = (PartialAmountOfBoxes * 100) / TotalAmountOfBoxes;
 Console.WriteLine("Percentage is {0}", PercentageResult);
 
 // calculate the area of the circle (a = pi * radius^2)
-
-
