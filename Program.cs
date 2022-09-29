@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.Globalization;
+﻿using System.Globalization;
 using PrimulProiectCsharp.Models;
 
 Console.WriteLine("Hello");
@@ -98,6 +96,8 @@ int ytd = 6;
 Console.WriteLine(xza + ytd);
 
 
+
+
 //"Operators" chapter
 
 // Basic assignment operator
@@ -118,6 +118,8 @@ Number3 = 50.50;
 Number4 = Number3;
 Console.WriteLine("Number4 is {0}", Number4);
 
+
+
 //Arithmetic operators
 
 double Number5 = 10.20D, Number6 = 45.87D, Result;
@@ -135,6 +137,9 @@ Console.WriteLine("{0} * {1} = {2}", Number9, Number10, Result2);
 double Number11 = 10.20, Number12 = 0.5, Result3;
 Result3 = Number11 / Number12; // division operation
 Console.WriteLine("{0} / {1} = {2}", Number11, Number12, Result3);
+
+
+
 
 //Relational operators
 
@@ -168,6 +173,9 @@ int FirstNumber6 = 10, SecondNumber6 = 20;
 Result9 = FirstNumber5 != SecondNumber5;// not equal to
 Console.WriteLine("{0} != {1} returns {2}", FirstNumber6, SecondNumber6, Result9);
 
+
+
+
 // Logical operators
 
 const int number13 = 10;
@@ -178,6 +186,9 @@ Console.WriteLine(result10);
 int Number15 = 10, Number16 = 20;
 var Result11 = Number15 == Number16 && Number15 > 5;
 Console.WriteLine(Result11);
+
+
+
 
 //Unary operators
 
@@ -210,6 +221,9 @@ int Number22 = 20;
 Console.WriteLine("Number is {0}", ++Number22); // prefix
 //Console.WriteLine((Number22));
 
+
+
+
 //Ternary operator
 
 int Number23 = 10;
@@ -222,6 +236,9 @@ int Number24 = 10;
 string Result17;
 Result17 = Number24 / 2 >= 0 ? "Even Number24" : "Odd Number"; // the result is "Even Number24"
 Console.WriteLine("{0} is {1}", Number24, Result17);
+
+
+
 
 //Compound Assignment Operators
 
@@ -256,6 +273,8 @@ bool Result19;
 Result19 = B >= C + A;
 Console.WriteLine(Result19);
 
+
+
 //Associativity of Operators-if both the operators have same precedence,the expression is evaluated based on the associativity of operator (left to right or right to left).
 
 int D = 5, E = 6, F = 3;
@@ -269,80 +288,3 @@ Console.WriteLine(Result21);
 int J = 5, K = 6, L = 3;
 int Result23 = J = K = L;
 Console.WriteLine("J = {0}, K = {1}, L = {2}", J, K, L);
-
-
-//Operators recap
-H = 7364;
-bool comparisonResult = H > 9;
-string MessageText = comparisonResult ? "greater" : "smaller";
-Console.WriteLine(MessageText);
-
-int Operand1 = 299;
-int Operand2 = 9;
-comparisonResult = Operand1 > Operand2;
-MessageText = comparisonResult ? "greater" : "smaller";
-Console.WriteLine("The value {0} is {1} than {2}", Operand1, MessageText, Operand2);
-
-Console.WriteLine(Result23);
-Console.WriteLine("The result is {0}", Result23);
-Console.WriteLine($"The result is { Result23 }");
-Console.WriteLine("The result is " + Result23);
-
-string test = Result23.ToString();
-Console.WriteLine("The result is {0}", test);
-
-int Var1 = 19, Var2 = 8, Var3 = 11;
-int sum10 = Var1 + Var3;
-int difference = Var1 - Var3;
-
-// if var1 > var2, calculate the sum betwen var1 and var3 else the difference
-bool comparisonResult2 = Var1 > Var2;
-
-int rezultatFinal = comparisonResult2 ? sum10 : difference;
-string AnotherMessageText = comparisonResult2 ? "sum" : "difference";
-string ComparisonMessage = comparisonResult2 ? "greater" : "smaller";
-
-Console.WriteLine("Var1 that has value {0} is {1} than Var2 that has value {2} and the {3} is {4}",
-    Var1, ComparisonMessage, Var2, AnotherMessageText, rezultatFinal);
-
-if (comparisonResult2)
-{
-    Console.WriteLine("The sum between Var1 and Var3 is {0}", sum10);
-}
-else
-{
-    Console.WriteLine("The difference between Var1 and Var3 " + difference);
-}
-
-if (comparisonResult2)
-{
-    Console.WriteLine("The sum between Var1 and Var3 " + (Var1 + Var3));
-}
-else
-{
-    Console.WriteLine("The difference between Var1 and Var3 " + (Var1 - Var3));
-}
-
-//Write a program to calculate (A+B)^2
-int Alpha = 2;
-int Beta = 10;
-int SumOfAlphaAndBeta = Alpha + Beta;
-Console.WriteLine("The result of raisind at the second power is {0}", SumOfAlphaAndBeta * SumOfAlphaAndBeta);
-
-int Teta = Beta;
-Console.WriteLine("Teta = {0}, Beta = {1}", Teta, Beta);
-Console.WriteLine($"Teta = {Teta}, Beta = {Beta}");
-Console.WriteLine($" {Teta}, {Beta}");
-Console.WriteLine("The result is " + (SumOfAlphaAndBeta * SumOfAlphaAndBeta));
-
-
-//There are 100 boxes.Calculate how much( in percentage) do 37 boxes represent out of the total number of boxes.
-
-double TotalAmountOfBoxes = 6311;
-double PartialAmountOfBoxes = 379;
-double PercentageResult = (PartialAmountOfBoxes * 100) / TotalAmountOfBoxes;
-Console.WriteLine("Percentage is {0}", PercentageResult);
-
-// calculate the area of the circle (a = pi * radius^2)
-
-

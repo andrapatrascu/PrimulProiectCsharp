@@ -7,4 +7,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="FlowControl\**" />
+    <Compile Remove="Flows\**" />
+    <EmbeddedResource Remove="FlowControl\**" />
+    <EmbeddedResource Remove="Flows\**" />
+    <None Remove="FlowControl\**" />
+    <None Remove="Flows\**" />
+  </ItemGroup>
+
 </Project>
