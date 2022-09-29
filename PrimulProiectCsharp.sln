@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimulProiectCsharp", "PrimulProiectCsharp.csproj", "{CEA06F7F-6C98-4CDE-8ABC-3B096EE33B8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowControl", "..\FlowControl\FlowControl.csproj", "{6D3E2BAE-DA16-47E2-BBB9-91B2FC289C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowControl", "..\FlowControl\FlowControl.csproj", "{218348BC-EDAB-4035-A6D3-02C5B71E8E91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{CEA06F7F-6C98-4CDE-8ABC-3B096EE33B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEA06F7F-6C98-4CDE-8ABC-3B096EE33B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEA06F7F-6C98-4CDE-8ABC-3B096EE33B8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D3E2BAE-DA16-47E2-BBB9-91B2FC289C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D3E2BAE-DA16-47E2-BBB9-91B2FC289C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D3E2BAE-DA16-47E2-BBB9-91B2FC289C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D3E2BAE-DA16-47E2-BBB9-91B2FC289C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218348BC-EDAB-4035-A6D3-02C5B71E8E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218348BC-EDAB-4035-A6D3-02C5B71E8E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218348BC-EDAB-4035-A6D3-02C5B71E8E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218348BC-EDAB-4035-A6D3-02C5B71E8E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
