@@ -127,6 +127,7 @@ else
 
 }
 
+
 int time1 = 22;
 
 if (time1 < 10)
@@ -153,7 +154,9 @@ Console.WriteLine(result30);
 
 //Nested if...else Statement
 
-int nestedNumber1 = 7, nestedNumber2 = -23, nestedNumber3 = 13;
+const int nestedNumber1 = 7;
+const int nestedNumber2 = -23;
+const int nestedNumber3 = 13;
 if (nestedNumber1 > nestedNumber2)
 {
     if (nestedNumber1 > nestedNumber3)
@@ -183,8 +186,8 @@ else
 
 //Write a C# Sharp program to accept two integers and check whether they are equal or not
 
-int number35 = 5;
-int number36 = 5;
+var number35 = 5;
+var number36 = 5;
 if (number35 != number36)
 {
     Console.WriteLine("{0} and {1} are not equal.", number35, number36);
@@ -194,8 +197,8 @@ else
     Console.WriteLine("{0} and {0} are equal.", number35, number36);
 }
 
-int number37 = 5;
-int number38 = 5;
+var number37 = 5;
+var number38 = 5;
 if (number37 == number38)
 {
     Console.WriteLine("{0} and {1} are  equal.", number37, number38);
