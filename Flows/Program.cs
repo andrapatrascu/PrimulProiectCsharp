@@ -1,15 +1,15 @@
-﻿using PrimulProiectCsharp;
+﻿using Flows.Enum;
 
 int var1 = 19, var2 = 8, var3 = 11;
-int sum10 = var1 + var3;
-int difference = var1 - var3;
+var sum10 = var1 + var3;
+var difference = var1 - var3;
 
 // if var1 > var2, calculate the sum betwen var1 and var3 else the difference
-bool comparisonResult2 = var1 > var2;
+var comparisonResult2 = var1 > var2;
 
-int rezultatFinal = comparisonResult2 ? sum10 : difference;
-string anotherMessageText = comparisonResult2 ? "sum" : "difference";
-string comparisonMessage = comparisonResult2 ? "greater" : "smaller";
+var rezultatFinal = comparisonResult2 ? sum10 : difference;
+var anotherMessageText = comparisonResult2 ? "sum" : "difference";
+var comparisonMessage = comparisonResult2 ? "greater" : "smaller";
 
 Console.WriteLine("Var1 that has value {0} is {1} than Var2 that has value {2} and the {3} is {4}",
     var1, comparisonMessage, var2, anotherMessageText, rezultatFinal);
@@ -41,7 +41,7 @@ else
 // if-then statement statement
 
 
-int compoundNumber = 10;
+var compoundNumber = 10;
 compoundNumber += 5;
 Console.WriteLine(compoundNumber);
 Console.WriteLine("The number is {0}", compoundNumber);
@@ -56,7 +56,7 @@ if (var1 < 5)
 Console.WriteLine(var1);
 
 
-int number50 = 14;
+var number50 = 14;
 if (number50 < 5)
 {
     Console.WriteLine("{0} is less than 5", number50);
@@ -70,8 +70,8 @@ if (20 > 18)
     Console.WriteLine("20 is greater than 18");
 }
 
-int x1 = 20;
-int y1 = 18;
+var x1 = 20;
+var y1 = 18;
 if (x1 > y1)
 {
     Console.WriteLine("X1 is greater than Y1");
@@ -92,8 +92,8 @@ else
 }
 Console.WriteLine(var2);
 
-int var4 = 10;
-var4 = (var4 < 5) ? var4 += 5 : var4 -= 5 ;
+var var4 = 10;
+var4 = (var4 < 5) ? var4 += 5 : var4 -= 5;
 Console.WriteLine(var4);
 Console.WriteLine("The result is {0}", var4);
 Console.WriteLine($"The result = {var4}");
@@ -102,7 +102,7 @@ Console.WriteLine("The result is " + var4);
 
 Console.WriteLine("Another line to check");
 
-int number41 = 3;
+var number41 = 3;
 if (number41 < 5)
     Console.WriteLine("{0} is less than 5", number41);
 else
@@ -110,14 +110,14 @@ else
 Console.WriteLine("This statement is always executed.");
 
 
-string result60 ;
+string result60;
 result60 = (number41 < 5) ? " less than 5" : "greater than or equal to 5";
 Console.WriteLine("{0} is {1}", number41, result60);
 Console.WriteLine($"The result is = {number41},{result60}");
 Console.WriteLine("The number is" + result60);
 
 
-int time = 02;
+var time = 02;
 if (time < 18)
 {
     Console.WriteLine("Good day.");
@@ -132,12 +132,12 @@ result63 = (time < 18) ? "Good day." : "Good evening.";
 Console.WriteLine(result63);
 Console.WriteLine("If time is {0} then the greeting is {1}", time, result63);
 Console.WriteLine($"Time is = {time} and the greeting is {result63}");
-Console.WriteLine("The greeting formula is "  + result63);
+Console.WriteLine("The greeting formula is " + result63);
 
 
 //if...else if (if-then -else if) Statement
 
-int number42 = 12;
+var number42 = 12;
 
 if (number42 < 5)
 {
@@ -165,7 +165,7 @@ Console.WriteLine(result61);
 
 
 
-int time1 = 22;
+var time1 = 22;
 
 if (time1 < 10)
 {
@@ -182,8 +182,8 @@ else
 }
 
 Console.WriteLine("Different code for ternary operator");
-int time2 = 20;
-string result30 = (time2 < 18) ? "Good day." : "Good evening.";
+var time2 = 20;
+var result30 = (time2 < 18) ? "Good day." : "Good evening.";
 Console.WriteLine(result30);
 
 Console.WriteLine((time2 < 18) ? "Good day." : "Good evening.");
@@ -243,8 +243,8 @@ Console.WriteLine((number35 != number36) ? "The numbers are different" : "The nu
 
 
 
-int number37 = 5;
-int number38 = 5;
+var number37 = 5;
+var number38 = 5;
 if (number37 == number38)
 {
     Console.WriteLine("{0} and {1} are  equal.", number37, number38);
@@ -262,7 +262,7 @@ Console.WriteLine((number37 == number38) ? "The numbers are equal" : "The number
 //switch statement
 //replace if-then-else if statement
 
-int number60 = 12;
+var number60 = 12;
 
 if (number60 < 5)
 {
@@ -285,7 +285,7 @@ else
 
 
 
-int day = 4;
+var day = 4;
 switch (day)
 {
     case 1:
@@ -355,7 +355,7 @@ switch (Char.ToLower(ch))
 }
 
 
-int dayoftheweek = 4;
+var dayoftheweek = 4;
 switch (dayoftheweek)
 {
     case 6:
@@ -372,7 +372,7 @@ switch (dayoftheweek)
 //Create a C# program that calculates a student's grade from an integer. Ask the user for a number (x) and answer the following:
 //10-A+, 9-A, 7.8-B,6-C,5-E,0.4-F
 
-int x = Convert.ToInt32(Console.ReadLine());
+var x = Convert.ToInt32(Console.ReadLine());
 
 switch (x)
 {
@@ -463,7 +463,7 @@ switch (op)
         break;
 }
 
-string statementType = "switch";
+var statementType = "switch";
 
 switch (statementType)
 {
@@ -480,19 +480,19 @@ switch (statementType)
 
 //Ternary exercises
 
-int number77 = 210;
-bool isEven;
+const int number77 = 210;
 
-isEven = (number77 % 2 == 0) ? true : false;
+const bool isEven = number77 % 2 == 0;
 Console.WriteLine(isEven);
 
-int number78 = 10, number79 = 100;
-var result80 = number78 > number79 ? "First number is greater than the second one" : "Second number is greater than first number";
+const int number78 = 10;
+const int number79 = 100;
+const string result80 = number78 > number79 ? "First number is greater than the second one" : "Second number is greater than first number";
 Console.WriteLine(result80);
 
 
 
 
-int myNum = (int)Months.April;
+const int myNum = (int)Months.April;
 Console.WriteLine(myNum);
 
