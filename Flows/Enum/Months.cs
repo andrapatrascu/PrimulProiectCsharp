@@ -1,4 +1,4 @@
-﻿namespace PrimulProiectCsharp;
+﻿namespace Flows.Enum;
 
 enum Months
 {
