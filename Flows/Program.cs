@@ -459,6 +459,21 @@ switch (op)
         break;
 }
 
+string statementType = "switch";
+
+switch (statementType)
+{
+    case "if.else":
+        Console.WriteLine("if...else statement");
+        break;
+    case "ternary":
+        Console.WriteLine("Ternary operator");
+        break;
+    case "switch":
+        Console.WriteLine("switch statement");
+        break;
+}
+
 //Ternary exercises
 
 int number77 = 210;
