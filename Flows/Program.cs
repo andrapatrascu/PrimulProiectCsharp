@@ -1,4 +1,6 @@
-﻿int var1 = 19, var2 = 8, var3 = 11;
+﻿using PrimulProiectCsharp;
+
+int var1 = 19, var2 = 8, var3 = 11;
 int sum10 = var1 + var3;
 int difference = var1 - var3;
 
@@ -90,12 +92,12 @@ else
 }
 Console.WriteLine(var2);
 
-
-var2 = (var2 < 5) ? var2 += 5 : var2 -= 5 ;
-Console.WriteLine(var2);
-Console.WriteLine("The result is {0}", var2);
-Console.WriteLine($"The result = {var2}");
-Console.WriteLine("The result is " + var2);
+int var4 = 10;
+var4 = (var4 < 5) ? var4 += 5 : var4 -= 5 ;
+Console.WriteLine(var4);
+Console.WriteLine("The result is {0}", var4);
+Console.WriteLine($"The result = {var4}");
+Console.WriteLine("The result is " + var4);
 
 
 Console.WriteLine("Another line to check");
@@ -487,3 +489,10 @@ Console.WriteLine(isEven);
 int number78 = 10, number79 = 100;
 var result80 = number78 > number79 ? "First number is greater than the second one" : "Second number is greater than first number";
 Console.WriteLine(result80);
+
+
+
+
+int myNum = (int)Months.April;
+Console.WriteLine(myNum);
+
