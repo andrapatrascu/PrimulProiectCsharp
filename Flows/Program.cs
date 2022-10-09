@@ -1,5 +1,5 @@
 ﻿using Flows.Enum;
-
+/*
 int var1 = 19, var2 = 8, var3 = 11;
 var sum10 = var1 + var3;
 var difference = var1 - var3;
@@ -491,8 +491,101 @@ const string result80 = number78 > number79 ? "First number is greater than the 
 Console.WriteLine(result80);
 
 
-
+*/
 
 const int myNum = (int)Months.April;
 Console.WriteLine(myNum);
 
+//For loop
+
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", i);
+}
+
+Console.WriteLine("First line after the for loop");
+
+for (int i = 100; i <= 110; i += 2)
+{
+    Console.WriteLine(i);
+    Console.WriteLine("testing");
+    if (i > 105)
+    {
+        Console.WriteLine(i);
+    }
+}
+
+int n = 500;
+int sum = 0;
+
+for (int i = 1; i <= n; i++)
+{
+    sum += i;
+}
+Console.WriteLine("The sum of the first {0} natural numbers is {1}", n, sum);
+
+// Display every even number between 20 and 37
+
+for ( int z = 20; z <= 37; z += 1 )
+{
+    if (z % 2 == 0)
+    {
+        Console.WriteLine("The number {0} is even", z);
+    }
+    else
+    {
+        Console.WriteLine("The number {0} is odd", z);
+    }
+
+}
+
+//Use a for loop to print "Yes" 5 times
+
+for ( int d = 0; d < 5; d++)
+{
+    Console.WriteLine("Yes");
+}
+
+//Display the sum of all the even numbers between 20 and 37
+
+int sumeven = 0;
+int rest = 0;
+for (int z = 20; z <= 37; z += 1)
+{
+    rest = z % 2;
+
+    if (rest == 0)
+    {
+        sumeven += z;
+    }
+}
+
+Console.WriteLine("The sum is {0}", sumeven);
+
+
+for (int i = 0, j = 0; i + j < 5; i++, j++)
+{
+    Console.WriteLine("Value of i: {0}, J: {1} ", i, j);
+}
+
+//for loop without initialization and iterator statement
+
+int g = 1;
+for ( ; g <= 5; )
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", g);
+    g++;
+    
+}
+
+// Infinite for loop
+g = 1;
+for (; g <= 5;)
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", g);
+    g++;
+    if (g == 3)
+    {
+        g = 0;
+    }
+}
