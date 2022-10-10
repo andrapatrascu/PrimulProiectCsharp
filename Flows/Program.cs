@@ -1,4 +1,5 @@
 ﻿using Flows.Enum;
+using static System.Char;
 
 int var1 = 19, var2 = 8, var3 = 11;
 var sum10 = var1 + var3;
@@ -313,9 +314,9 @@ switch (day)
 
 char ch;
 Console.WriteLine("Enter an alphabet");
-ch = Convert.ToChar(Console.ReadLine());
+ch = Convert.ToChar(Console.ReadLine() ?? string.Empty);
 
-switch (Char.ToLower(ch))
+switch (ToLower(ch))
 {
     case 'a':
         Console.WriteLine("Vowel");
@@ -340,7 +341,7 @@ switch (Char.ToLower(ch))
 Console.WriteLine("Enter an alphabet");
 ch = Convert.ToChar(Console.ReadLine());
 
-switch (Char.ToLower(ch))
+switch (ToLower(ch))
 {
     case 'a':
     case 'e':
@@ -401,7 +402,7 @@ switch (x)
 Console.WriteLine("Enter an alphabet");
 ch = Convert.ToChar(Console.ReadLine());
 
-switch (Char.ToLower(ch))
+switch (ToLower(ch))
 {
     case 'a':
     case 'e':
