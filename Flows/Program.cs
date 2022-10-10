@@ -515,7 +515,7 @@ for (int i = 100; i <= 110; i += 2)
     }
 }
 
-int n = 500;
+int n = 5;
 int sum = 0;
 
 for (int i = 1; i <= n; i++)
@@ -579,6 +579,8 @@ for ( ; g <= 5; )
 }
 
 // Infinite for loop
+
+/*
 g = 1;
 for (; g <= 5;)
 {
@@ -589,3 +591,23 @@ for (; g <= 5;)
         g = 0;
     }
 }
+
+*/
+
+// Display every odd number between 0 and 5
+
+for (int z = 0; z <= 5; z ++ )
+{
+    if (z % 2 == 1)
+    {
+        Console.WriteLine("The number {0} is odd", z);
+    }
+   
+}
+ //Create a for loop that prints out 10 numbers horizontal
+
+for (int i = 0; i < 10; i++)
+{
+    Console.Write("{0} ",i);
+}
+
