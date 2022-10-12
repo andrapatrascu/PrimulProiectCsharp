@@ -611,3 +611,118 @@ for (int i = 0; i < 10; i++)
     Console.Write("{0} ",i);
 }
 
+//while and do...while loop
+
+int y = 1;
+while (y < 10)
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", y);
+    y++;
+}
+
+//while loop to compute sum of first 5 natural numbers
+
+int u = 1, sum78 = 0;
+
+while (u <= 5)
+{
+    sum78 += u;
+    u++;
+}
+Console.WriteLine("Sum = {0}", sum78);
+
+int ii = 1, sum79 = 0;
+
+while (ii <= 10)
+{
+    sum79 += ii;
+    ii++;
+}
+Console.WriteLine("Sum = {0}", sum79);
+
+//do...while loop
+
+int xy = 0;
+do
+{
+    Console.WriteLine(xy);
+    xy++;
+}
+while (xy < 5);
+
+
+int ij = 1, nj = 5, product;
+
+do
+{
+    product = nj * ij;
+    Console.WriteLine("{0} * {1} = {2}", nj, ij, product);
+    ij++;
+} while (ij <= 10);
+
+// break Statement
+
+//C# break statement with for loop
+//This example jumps out of the loop when i is equal to 3:
+
+for (int i = 0; i < 10; i++)
+{
+    if (i == 3)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+for (int i = 1; i < 10; i++)
+{
+    if (i == 4)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+//C# break statement with while loop
+
+int oi = 1;
+while (oi <= 5 )
+{
+    Console.WriteLine(oi);
+    oi++;
+    if (oi == 4)
+    {
+        break;
+    }
+}
+
+// continue Statement
+
+//C# continue with for loop
+
+
+for (int i = 1; i <= 5; ++i)
+{
+
+    if (i == 3) // skip the condition
+    {
+        continue;
+    }
+
+    Console.WriteLine(i);
+}
+
+// C# continue with while loop
+int yu = 0;
+while (yu < 5)
+{
+    yu++;
+
+    if (yu == 3)
+    {
+        continue;
+    }
+
+    Console.WriteLine(yu);
+}
+
