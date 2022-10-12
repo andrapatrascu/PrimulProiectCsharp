@@ -338,7 +338,7 @@ switch (ToLower(ch))
 }
 
 Console.WriteLine("Enter an alphabet");
-ch = Convert.ToChar(Console.ReadLine());
+ch = Convert.ToChar(Console.ReadLine() ?? string.Empty);
 
 switch (ToLower(ch))
 {
@@ -399,7 +399,7 @@ switch (x)
 
 
 Console.WriteLine("Enter an alphabet");
-ch = Convert.ToChar(Console.ReadLine());
+ch = Convert.ToChar(Console.ReadLine() ?? string.Empty);
 
 switch (ToLower(ch))
 {
