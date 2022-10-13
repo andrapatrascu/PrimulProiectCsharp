@@ -1,6 +1,5 @@
 ﻿using Flows.Enum;
-using static System.Char;
-
+/*
 int var1 = 19, var2 = 8, var3 = 11;
 var sum10 = var1 + var3;
 var difference = var1 - var3;
@@ -492,8 +491,268 @@ const string result80 = number78 > number79 ? "First number is greater than the 
 Console.WriteLine(result80);
 
 
-
+*/
 
 const int myNum = (int)Months.April;
 Console.WriteLine(myNum);
 
+//For loop
+
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", i);
+}
+
+Console.WriteLine("First line after the for loop");
+
+for (int i = 100; i <= 110; i += 2)
+{
+    Console.WriteLine(i);
+    Console.WriteLine("testing");
+    if (i > 105)
+    {
+        Console.WriteLine(i);
+    }
+}
+
+Console.WriteLine("sum");
+
+int sum = 0;
+for (int i = 1; i <= 5; i++)
+
+{
+    sum += i;
+    
+}
+Console.WriteLine("The sum of the first 5 natural numbers is {0}", sum);
+
+// Display every even number between 20 and 37
+
+for ( int z = 20; z <= 37; z += 1 )
+{
+    if (z % 2 == 0)
+    {
+        Console.WriteLine("The number {0} is even", z);
+    }
+    else
+    {
+        Console.WriteLine("The number {0} is odd", z);
+    }
+
+}
+
+//Use a for loop to print "Yes" 5 times
+
+for ( int d = 0; d < 5; d++)
+{
+    Console.WriteLine("Yes");
+}
+
+//Display the sum of all the even numbers between 20 and 37
+
+int sumeven = 0;
+int rest = 0;
+for (int z = 20; z <= 37; z += 1)
+{
+    rest = z % 2;
+
+    if (rest == 0)
+    {
+        sumeven += z;
+    }
+}
+
+Console.WriteLine("The sum is {0}", sumeven);
+
+
+for (int i = 0, j = 0; i + j < 5; i++, j++)
+{
+    Console.WriteLine("Value of i: {0}, J: {1} ", i, j);
+}
+
+//for loop without initialization and iterator statement
+
+int g = 1;
+for ( ; g <= 5; )
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", g);
+    g++;
+    
+}
+
+// Infinite for loop
+
+/*
+g = 1;
+for (; g <= 5;)
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", g);
+    g++;
+    if (g == 3)
+    {
+        g = 0;
+    }
+}
+
+*/
+
+// Display every odd number between 0 and 5
+
+for (int z = 0; z <= 5; z ++ )
+{
+    if (z % 2 == 1)
+    {
+        Console.WriteLine("The number {0} is odd", z);
+    }
+   
+}
+ //Create a for loop that prints out 10 numbers horizontal
+
+for (int i = 0; i < 10; i++)
+{
+    Console.Write("{0} ",i);
+}
+
+//while and do...while loop
+
+int y = 1;
+while (y < 10)
+{
+    Console.WriteLine("C# For Loop: Iteration {0}", y);
+    y++;
+}
+
+//while loop to compute sum of first 5 natural numbers
+
+int u = 1, sum78 = 0;
+
+while (u <= 5)
+{
+    sum78 += u;
+    u++;
+}
+Console.WriteLine("Sum = {0}", sum78);
+
+int ii = 1, sum79 = 0;
+
+while (ii <= 10)
+{
+    sum79 += ii;
+    ii++;
+}
+Console.WriteLine("Sum = {0}", sum79);
+
+//do...while loop
+
+int xy = 0;
+do
+{
+    Console.WriteLine(xy);
+    xy++;
+}
+while (xy < 5);
+
+
+int ij = 1, nj = 5, product;
+
+do
+{
+    product = nj * ij;
+    Console.WriteLine("{0} * {1} = {2}", nj, ij, product);
+    ij++;
+} while (ij <= 10);
+
+// break Statement
+
+//C# break statement with for loop
+//This example jumps out of the loop when i is equal to 3:
+
+for (int i = 0; i < 10; i++)
+{
+    if (i == 3)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+for (int i = 1; i < 10; i++)
+{
+    if (i == 4)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+//C# break statement with while loop
+
+int oi = 1;
+while (oi <= 5 )
+{
+    Console.WriteLine(oi);
+    oi++;
+    if (oi == 4)
+    {
+        break;
+    }
+}
+
+// continue Statement
+
+//C# continue with for loop
+
+Console.WriteLine("continue");
+
+for (int i = 1; i <= 5; ++i)
+{
+
+    if (i == 3) // skip the condition
+    {
+        Console.WriteLine(i);
+        continue;
+    }
+
+    Console.WriteLine(i);
+}
+
+// C# continue with while loop
+int yu = 0;
+while (yu < 5)
+{
+    yu++;
+
+    if (yu == 3)
+    {
+        continue;
+    }
+
+    Console.WriteLine(yu);
+}
+
+Console.WriteLine("exercises");
+
+//for loop exercises
+
+for ( int i = 0; i < 7; i++)
+{
+    Console.WriteLine("i= " + i);
+}
+
+//This example will only print even values between 0 and 10
+
+for (int i = 0; i < 10; i = i + 2)
+{
+    Console.WriteLine("i = " + i);
+}
+
+//This example will only print odd values between 0 and 10
+
+
+for (int i = 1; i < 10; i++)
+{
+    if (i % i == 10)
+    {
+        Console.WriteLine("The number is " + i);
+    }
+}
