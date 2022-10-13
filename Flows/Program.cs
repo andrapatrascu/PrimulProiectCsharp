@@ -515,14 +515,16 @@ for (int i = 100; i <= 110; i += 2)
     }
 }
 
-int n = 5;
-int sum = 0;
+Console.WriteLine("sum");
 
-for (int i = 1; i <= n; i++)
+int sum = 0;
+for (int i = 1; i <= 5; i++)
+
 {
     sum += i;
+    
 }
-Console.WriteLine("The sum of the first {0} natural numbers is {1}", n, sum);
+Console.WriteLine("The sum of the first 5 natural numbers is {0}", sum);
 
 // Display every even number between 20 and 37
 
@@ -700,12 +702,14 @@ while (oi <= 5 )
 
 //C# continue with for loop
 
+Console.WriteLine("continue");
 
 for (int i = 1; i <= 5; ++i)
 {
 
     if (i == 3) // skip the condition
     {
+        Console.WriteLine(i);
         continue;
     }
 
@@ -726,3 +730,29 @@ while (yu < 5)
     Console.WriteLine(yu);
 }
 
+Console.WriteLine("exercises");
+
+//for loop exercises
+
+for ( int i = 0; i < 7; i++)
+{
+    Console.WriteLine("i= " + i);
+}
+
+//This example will only print even values between 0 and 10
+
+for (int i = 0; i < 10; i = i + 2)
+{
+    Console.WriteLine("i = " + i);
+}
+
+//This example will only print odd values between 0 and 10
+
+
+for (int i = 1; i < 10; i++)
+{
+    if (i % i == 10)
+    {
+        Console.WriteLine("The number is " + i);
+    }
+}
