@@ -496,16 +496,19 @@ Console.WriteLine(result80);
 const int myNum = (int)Months.April;
 Console.WriteLine(myNum);
 
+
+
+
 //For loop
 
-for (int i = 1; i <= 5; i++)
+for (var i = 1; i <= 5; i++)
 {
     Console.WriteLine("C# For Loop: Iteration {0}", i);
 }
 
 Console.WriteLine("First line after the for loop");
 
-for (int i = 100; i <= 110; i += 2)
+for (var i = 100; i <= 110; i += 2)
 {
     Console.WriteLine(i);
     Console.WriteLine("testing");
@@ -517,8 +520,8 @@ for (int i = 100; i <= 110; i += 2)
 
 Console.WriteLine("sum");
 
-int sum = 0;
-for (int i = 1; i <= 5; i++)
+var sum = 0;
+for (var i = 1; i <= 5; i++)
 
 {
     sum += i;
@@ -528,7 +531,7 @@ Console.WriteLine("The sum of the first 5 natural numbers is {0}", sum);
 
 // Display every even number between 20 and 37
 
-for ( int z = 20; z <= 37; z += 1 )
+for ( var z = 20; z <= 37; z += 1 )
 {
     if (z % 2 == 0)
     {
@@ -543,16 +546,16 @@ for ( int z = 20; z <= 37; z += 1 )
 
 //Use a for loop to print "Yes" 5 times
 
-for ( int d = 0; d < 5; d++)
+for ( var d = 0; d < 5; d++)
 {
     Console.WriteLine("Yes");
 }
 
 //Display the sum of all the even numbers between 20 and 37
 
-int sumeven = 0;
-int rest = 0;
-for (int z = 20; z <= 37; z += 1)
+var sumeven = 0;
+var rest = 0;
+for (var z = 20; z <= 37; z += 1)
 {
     rest = z % 2;
 
@@ -572,13 +575,16 @@ for (int i = 0, j = 0; i + j < 5; i++, j++)
 
 //for loop without initialization and iterator statement
 
-int g = 1;
+var g = 1;
 for ( ; g <= 5; )
 {
     Console.WriteLine("C# For Loop: Iteration {0}", g);
     g++;
     
 }
+
+
+
 
 // Infinite for loop
 
@@ -598,7 +604,7 @@ for (; g <= 5;)
 
 // Display every odd number between 0 and 5
 
-for (int z = 0; z <= 5; z ++ )
+for (var z = 0; z <= 5; z ++ )
 {
     if (z % 2 == 1)
     {
@@ -608,19 +614,24 @@ for (int z = 0; z <= 5; z ++ )
 }
  //Create a for loop that prints out 10 numbers horizontal
 
-for (int i = 0; i < 10; i++)
+for (var i = 0; i < 10; i++)
 {
     Console.Write("{0} ",i);
 }
 
+
+
+
 //while and do...while loop
 
-int y = 1;
+var y = 1;
 while (y < 10)
 {
     Console.WriteLine("C# For Loop: Iteration {0}", y);
     y++;
 }
+
+
 
 //while loop to compute sum of first 5 natural numbers
 
@@ -642,9 +653,12 @@ while (ii <= 10)
 }
 Console.WriteLine("Sum = {0}", sum79);
 
+
+
+
 //do...while loop
 
-int xy = 0;
+var xy = 0;
 do
 {
     Console.WriteLine(xy);
@@ -662,12 +676,15 @@ do
     ij++;
 } while (ij <= 10);
 
+
+
+
 // break Statement
 
 //C# break statement with for loop
 //This example jumps out of the loop when i is equal to 3:
 
-for (int i = 0; i < 10; i++)
+for (var i = 0; i < 10; i++)
 {
     if (i == 3)
     {
@@ -676,7 +693,7 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(i);
 }
 
-for (int i = 1; i < 10; i++)
+for (var i = 1; i < 10; i++)
 {
     if (i == 4)
     {
@@ -685,9 +702,11 @@ for (int i = 1; i < 10; i++)
     Console.WriteLine(i);
 }
 
+
+
 //C# break statement with while loop
 
-int oi = 1;
+var oi = 1;
 while (oi <= 5 )
 {
     Console.WriteLine(oi);
@@ -698,13 +717,15 @@ while (oi <= 5 )
     }
 }
 
+
+
 // continue Statement
 
 //C# continue with for loop
 
 Console.WriteLine("continue");
 
-for (int i = 1; i <= 5; ++i)
+for (var i = 1; i <= 5; ++i)
 {
 
     if (i == 3) // skip the condition
@@ -716,8 +737,9 @@ for (int i = 1; i <= 5; ++i)
     Console.WriteLine(i);
 }
 
+
 // C# continue with while loop
-int yu = 0;
+var yu = 0;
 while (yu < 5)
 {
     yu++;
@@ -732,16 +754,19 @@ while (yu < 5)
 
 Console.WriteLine("exercises");
 
+
+
+
 //for loop exercises
 
-for ( int i = 0; i < 7; i++)
+for ( var i = 0; i < 7; i++)
 {
     Console.WriteLine("i= " + i);
 }
 
 //This example will only print even values between 0 and 10
 
-for (int i = 0; i < 10; i = i + 2)
+for (var i = 0; i < 10; i = i + 2)
 {
     Console.WriteLine("i = " + i);
 }
@@ -749,7 +774,7 @@ for (int i = 0; i < 10; i = i + 2)
 //This example will only print odd values between 0 and 10
 
 
-for (int i = 1; i < 10; i++)
+for (var i = 1; i < 10; i++)
 {
     if (i % i == 10)
     {
