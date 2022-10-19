@@ -781,3 +781,38 @@ for (var i = 1; i < 10; i++)
         Console.WriteLine("The number is " + i);
     }
 }
+
+//for examples
+
+for (int i = 1; i < 5; i++)
+{
+    Console.WriteLine("The number is " + i);
+}
+
+//Stop the loop if i is 5.
+for (int i = 0; i < 10; i++)
+{
+    if (i == 5)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+//In the following loop, when the value is "4", jump directly to the next value.
+for (int i = 0; i < 10; i++)
+{
+    if (i == 4)
+    {
+        continue;
+    }
+    Console.WriteLine(i);
+}
+
+//Print i as long as i is less than 6.
+int ik = 1;
+while (ik < 6) 
+{
+    Console.WriteLine(ik);
+    ik++;
+}
