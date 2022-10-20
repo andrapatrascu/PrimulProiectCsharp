@@ -781,3 +781,106 @@ for (var i = 1; i < 10; i++)
         Console.WriteLine("The number is " + i);
     }
 }
+
+//for examples
+
+for (int i = 1; i < 5; i++)
+{
+    Console.WriteLine("The number is " + i);
+}
+
+//Stop the loop if i is 5.
+for (int i = 0; i < 10; i++)
+{
+    if (i == 5)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+//In the following loop, when the value is "4", jump directly to the next value.
+for (int i = 0; i < 10; i++)
+{
+    if (i == 4)
+    {
+        continue;
+    }
+    Console.WriteLine(i);
+}
+
+//Print i as long as i is less than 6.
+int ik = 1;
+while (ik < 6) 
+{
+    Console.WriteLine(ik);
+    ik++;
+}
+
+//Arrays
+
+
+// Declare an array
+
+int[] age;
+// allocate memory for array
+age = new int[5];//the array can store 5 elements
+                 //We can also say the size/length of the array is 5
+
+int[] age1 = new int[5];
+
+//Array initialization
+string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+int[] mynumber = { 1, 2, 3, 4, 5 };
+
+// Access Array Elements
+
+int[] numbers = { 1, 2, 3 };
+
+//access first element
+Console.WriteLine("Element in first index : " + numbers[0]);
+
+//access second element
+Console.WriteLine("Element in second index : " + numbers[1]);
+
+//access third element
+Console.WriteLine("Element in third index : " + numbers[2]);
+
+string[] cars1 = { "Volvo", "BMW", "Ford", "Mazda" };
+Console.WriteLine(cars1[0]);
+Console.WriteLine($"The name of the car = {cars1[0]}");
+
+/*
+Console.WriteLine(compoundNumber);
+Console.WriteLine("The number is {0}", compoundNumber);
+Console.WriteLine($"The number = {compoundNumber}");
+Console.WriteLine("The number is " + compoundNumber);
+*/
+
+//Change Array Elements
+
+// create an array
+int[] numbers1 = { 1, 2, 3 };
+
+Console.WriteLine("Old Value at index 0: " + numbers1[0]);
+
+// change the value at index 0
+numbers1[0] = 11;
+
+//print new value
+Console.WriteLine("New Value at index 0: " + numbers1[0]);
+
+// Iterating C# Array using Loops
+
+int[] numbers2 = { 1, 2, 3 };
+
+for (int i = 0; i < numbers2.Length; i++)
+{
+    Console.WriteLine("Element in index " + i + ": " + numbers2[i]);
+}
+
+string[] cars2 = { "Volvo", "BMW", "Ford", "Mazda" };
+for (int i = 0; i < cars2.Length; i++)
+{
+    Console.WriteLine(cars2[i]);
+}
