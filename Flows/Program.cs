@@ -533,15 +533,7 @@ Console.WriteLine("The sum of the first 5 natural numbers is {0}", sum);
 
 for (var z = 20; z <= 37; z += 1)
 {
-    if (z % 2 == 0)
-    {
-        Console.WriteLine("The number {0} is even", z);
-    }
-    else
-    {
-        Console.WriteLine("The number {0} is odd", z);
-    }
-
+    Console.WriteLine(z % 2 == 0 ? "The number {0} is even" : "The number {0} is odd", z);
 }
 
 //Use a for loop to print "Yes" 5 times
@@ -820,14 +812,14 @@ while (ik < 6)
 
 // Declare an array
 
-int[] age;
 // allocate memory for array
-age = new int[5];//the array can store 5 elements
+var age = new int[5];
                  //We can also say the size/length of the array is 5
 
 var age1 = new int[5];
 
 //Array initialization
+age1 = new[] { 2, 5, 7, 80, 0, 5, 33 };
 string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
 int[] myNumber = { 1, 2, 3, 4, 5 };
 
