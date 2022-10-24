@@ -525,13 +525,13 @@ for (var i = 1; i <= 5; i++)
 
 {
     sum += i;
-    
+
 }
 Console.WriteLine("The sum of the first 5 natural numbers is {0}", sum);
 
 // Display every even number between 20 and 37
 
-for ( var z = 20; z <= 37; z += 1 )
+for (var z = 20; z <= 37; z += 1)
 {
     if (z % 2 == 0)
     {
@@ -546,26 +546,25 @@ for ( var z = 20; z <= 37; z += 1 )
 
 //Use a for loop to print "Yes" 5 times
 
-for ( var d = 0; d < 5; d++)
+for (var d = 0; d < 5; d++)
 {
     Console.WriteLine("Yes");
 }
 
 //Display the sum of all the even numbers between 20 and 37
 
-var sumeven = 0;
-var rest = 0;
+var sumEven = 0;
 for (var z = 20; z <= 37; z += 1)
 {
-    rest = z % 2;
+    var rest = z % 2;
 
     if (rest == 0)
     {
-        sumeven += z;
+        sumEven += z;
     }
 }
 
-Console.WriteLine("The sum is {0}", sumeven);
+Console.WriteLine("The sum is {0}", sumEven);
 
 
 for (int i = 0, j = 0; i + j < 5; i++, j++)
@@ -576,11 +575,10 @@ for (int i = 0, j = 0; i + j < 5; i++, j++)
 //for loop without initialization and iterator statement
 
 var g = 1;
-for ( ; g <= 5; )
+for (; g <= 5;)
 {
     Console.WriteLine("C# For Loop: Iteration {0}", g);
     g++;
-    
 }
 
 
@@ -604,19 +602,19 @@ for (; g <= 5;)
 
 // Display every odd number between 0 and 5
 
-for (var z = 0; z <= 5; z ++ )
+for (var z = 0; z <= 5; z++)
 {
     if (z % 2 == 1)
     {
         Console.WriteLine("The number {0} is odd", z);
     }
-   
+
 }
- //Create a for loop that prints out 10 numbers horizontal
+//Create a for loop that prints out 10 numbers horizontal
 
 for (var i = 0; i < 10; i++)
 {
-    Console.Write("{0} ",i);
+    Console.Write("{0} ", i);
 }
 
 
@@ -707,7 +705,7 @@ for (var i = 1; i < 10; i++)
 //C# break statement with while loop
 
 var oi = 1;
-while (oi <= 5 )
+while (oi <= 5)
 {
     Console.WriteLine(oi);
     oi++;
@@ -759,7 +757,7 @@ Console.WriteLine("exercises");
 
 //for loop exercises
 
-for ( var i = 0; i < 7; i++)
+for (var i = 0; i < 7; i++)
 {
     Console.WriteLine("i= " + i);
 }
@@ -784,13 +782,13 @@ for (var i = 1; i < 10; i++)
 
 //for examples
 
-for (int i = 1; i < 5; i++)
+for (var i = 1; i < 5; i++)
 {
     Console.WriteLine("The number is " + i);
 }
 
 //Stop the loop if i is 5.
-for (int i = 0; i < 10; i++)
+for (var i = 0; i < 10; i++)
 {
     if (i == 5)
     {
@@ -800,7 +798,7 @@ for (int i = 0; i < 10; i++)
 }
 
 //In the following loop, when the value is "4", jump directly to the next value.
-for (int i = 0; i < 10; i++)
+for (var i = 0; i < 10; i++)
 {
     if (i == 4)
     {
@@ -810,8 +808,8 @@ for (int i = 0; i < 10; i++)
 }
 
 //Print i as long as i is less than 6.
-int ik = 1;
-while (ik < 6) 
+var ik = 1;
+while (ik < 6)
 {
     Console.WriteLine(ik);
     ik++;
@@ -827,11 +825,11 @@ int[] age;
 age = new int[5];//the array can store 5 elements
                  //We can also say the size/length of the array is 5
 
-int[] age1 = new int[5];
+var age1 = new int[5];
 
 //Array initialization
 string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
-int[] mynumber = { 1, 2, 3, 4, 5 };
+int[] myNumber = { 1, 2, 3, 4, 5 };
 
 // Access Array Elements
 
@@ -874,13 +872,13 @@ Console.WriteLine("New Value at index 0: " + numbers1[0]);
 
 int[] numbers2 = { 1, 2, 3 };
 
-for (int i = 0; i < numbers2.Length; i++)
+for (var i = 0; i < numbers2.Length; i++)
 {
     Console.WriteLine("Element in index " + i + ": " + numbers2[i]);
 }
 
 string[] cars2 = { "Volvo", "BMW", "Ford", "Mazda" };
-for (int i = 0; i < cars2.Length; i++)
+foreach (var car in cars2)
 {
-    Console.WriteLine(cars2[i]);
+    Console.WriteLine(car);
 }
