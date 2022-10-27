@@ -10,10 +10,13 @@
   <ItemGroup>
     <Compile Remove="FlowControl\**" />
     <Compile Remove="Flows\**" />
+    <Compile Remove="OOP\**" />
     <EmbeddedResource Remove="FlowControl\**" />
     <EmbeddedResource Remove="Flows\**" />
+    <EmbeddedResource Remove="OOP\**" />
     <None Remove="FlowControl\**" />
     <None Remove="Flows\**" />
+    <None Remove="OOP\**" />
   </ItemGroup>
 
 </Project>

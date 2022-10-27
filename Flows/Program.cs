@@ -874,3 +874,128 @@ foreach (var car in cars2)
 {
     Console.WriteLine(car);
 }
+
+//for recap
+
+//Display the sum of numbers between 7 and 17 
+
+int sum80 = 7;
+
+for (int i = 8; i <= 17; i++)
+{
+    sum80 = sum80 + i;
+}
+Console.WriteLine("Sum is {0}", sum80);
+
+
+//Display the sum of odd numbers between 7 and 17
+sum80 = 7;
+
+for (int i = 8; i <= 17; i++)
+{
+    if (i % 2 == 1)
+    {
+        sum80 = sum80 + i;
+    }
+}
+Console.WriteLine("Sum is {0}", sum80);
+
+
+// Another solution
+sum80 = 0;
+
+for (int i = 7; i <= 17; i += 2)
+{
+    sum80 = sum80 + i;
+}
+Console.WriteLine("Sum is {0}", sum80);
+
+//Display the sum of even numbers between 7 and 17
+
+sum80 = 0;
+
+for (int i = 7; i <= 17; i++)
+
+    if (i % 2 == 0)
+    {
+        sum80 = sum80 + i;
+    }
+Console.WriteLine("Sum is {0}", sum80);
+
+//Another solution
+
+sum80 = 0;
+
+for (int i = 8; i <= 17; i += 2)
+{
+    sum80 = sum80 + i;
+}
+Console.WriteLine("Sum is {0}", sum80);
+
+//Array exercises
+
+int[] numbers14 = { 23, 14, 19, -12, 3, 57 };
+int sum15 = 0;
+int element = 0;
+for (int i = 0; i < numbers14.Length; i++)
+{
+    element = numbers14[i];
+    sum15 = sum15 + element;
+}
+Console.WriteLine(sum15);
+
+// Array elements multiplied by 10 so that each element is 10 times larger
+for (int i = 0; i < numbers14.Length; ++i)
+{
+    numbers14[i] = numbers14[i] * 10;
+}
+
+Console.Write("The new array values are: ");
+for (int i = 0; i < numbers14.Length; ++i)
+{
+    Console.Write(numbers14[i]);
+    if (i < numbers14.Length - 1)
+    {
+        Console.Write(", ");
+    }
+}
+//Using foreach loop
+
+Console.WriteLine();
+Console.WriteLine("Array Elements: ");
+
+foreach (int num in numbers14)
+{
+    Console.WriteLine(num);
+}
+
+// Sum of the arrays elements using foreach and compute average
+
+Console.WriteLine("Average result");
+// Reset array values
+
+for (int i = 0; i < numbers14.Length; i++)
+{
+    numbers14[i] = i;
+}
+
+double sumd = 0;
+
+foreach (int num in numbers14)
+{
+    sumd = sumd + num;
+}
+
+double average = sumd / numbers14.Length;
+Console.WriteLine("Average is {0}", average);
+
+
+
+string[] Vegetables = { "Apple", "Pear", "Onion" };
+
+
+
+foreach (string Veggie in Vegetables)
+{
+    Console.WriteLine("Veggie = {0}", Veggie);
+}
