@@ -1,4 +1,6 @@
-﻿namespace OOP
+﻿using OOP.Modals;
+
+namespace OOP
 {
     class Program
     {
@@ -8,15 +10,27 @@
             Dog bullDog = new Dog();
 
             // access breed of the Dog 
-            bullDog.Breed = "Bull Dog";
+            bullDog.Breed = true;
             Console.WriteLine(bullDog.Breed);// AFISEZ
 
             // access method of the Dog
             bullDog.Bark();
-            Car myObj1 = new Car();
-            Car myObj2 = new Car();
-            Console.WriteLine(myObj1.Color);
-            Console.WriteLine(myObj2.Color);
+
+            Car car = new Car ();
+            
+            Console.WriteLine(car.Color);
+            Console.WriteLine(car.MaxSpeed);
+            Console.WriteLine(car.CarType);
+
+
+            car.Color = "blue";
+            car.MaxSpeed = 250;
+            car.CarType = CarType.Toyota;
+            Console.WriteLine(car.Color);
+            Console.WriteLine(car.MaxSpeed);
+            Console.WriteLine(car.CarType);
+
+
 
             Car myObj = new Car();
             myObj.MaxSpeed = 200;
