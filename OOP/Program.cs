@@ -1,43 +1,40 @@
-﻿using OOP.Modals;
+﻿using OOP.Models;
 
-namespace OOP
+namespace OOP;
+
+internal class Program
 {
-    class Program
+    private static void Main(string[] args)
     {
-        static void Main(string[] args)
+        //create Dog object
+        var bullDog = new Dog
         {
-            //create Dog object
-            Dog bullDog = new Dog();
+            //set breed value
+            Breed = true
+        };
 
-            // access breed of the Dog 
-            bullDog.Breed = true;
-            Console.WriteLine(bullDog.Breed);// AFISEZ
+        Console.WriteLine(bullDog.Breed);// AFISEZ
 
-            // access method of the Dog
-            bullDog.Bark();
-
-            Car car = new Car ();
-            
-            Console.WriteLine(car.Color);
-            Console.WriteLine(car.MaxSpeed);
-            Console.WriteLine(car.CarType);
+        // access method of the Dog
+        bullDog.Bark();
 
 
-            car.Color = "blue";
-            car.MaxSpeed = 250;
-            car.CarType = CarType.Toyota;
-            Console.WriteLine(car.Color);
-            Console.WriteLine(car.MaxSpeed);
-            Console.WriteLine(car.CarType);
+        var car = new Car();
+        Console.WriteLine(car.Color);
+        Console.WriteLine(car.MaxSpeed);
+        Console.WriteLine(car.CarType);
+
+        car.Color = "blue";
+        car.MaxSpeed = 250;
+        car.CarType = CarType.Toyota;
+        Console.WriteLine(car.Color);
+        Console.WriteLine(car.MaxSpeed);
+        Console.WriteLine(car.CarType);
 
 
-
-            Car myObj = new Car();
-            myObj.MaxSpeed = 200;
-            Console.WriteLine(myObj.Color);
-            Console.WriteLine(myObj.MaxSpeed);
-
-        }
+        Car car2 = new Car();
+        car2.MaxSpeed = 200;
+        Console.WriteLine(car2.Color);
+        Console.WriteLine(car2.MaxSpeed);
     }
 }
-
