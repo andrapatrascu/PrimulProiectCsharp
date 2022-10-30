@@ -23,12 +23,12 @@ internal class Program
         Console.WriteLine(car.MaxSpeed);
         Console.WriteLine(car.CarType);
 
-            car.Color = "blue";
-            car.MaxSpeed = 250;
-            car.CarType = CarType.Toyota;
-            Console.WriteLine(car.Color);
-            Console.WriteLine(car.MaxSpeed);
-            Console.WriteLine(car.CarType);
+        car.Color = "blue";
+        car.MaxSpeed = 250;
+        car.CarType = CarType.Toyota;
+        Console.WriteLine(car.Color);
+        Console.WriteLine(car.MaxSpeed);
+        Console.WriteLine(car.CarType);
 
 
         Car car2 = new Car();
