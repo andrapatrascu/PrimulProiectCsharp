@@ -1,5 +1,4 @@
-﻿using OOP.Modals;
-using OOP.Models;
+﻿using OOP.Models;
 
 namespace OOP
 {

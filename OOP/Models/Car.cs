@@ -1,4 +1,4 @@
-﻿namespace OOP.Modals
+﻿namespace OOP.Models
 {
     class Car
     {
