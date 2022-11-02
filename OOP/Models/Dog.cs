@@ -4,6 +4,8 @@ internal class Dog
 {
     public int Age = 10;
     public bool Breed;
+    public string TypeOfDog;
+
 
     public void Bark()
     {
