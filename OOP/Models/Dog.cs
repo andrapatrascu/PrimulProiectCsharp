@@ -13,4 +13,10 @@ internal class Dog
 
     }
 
+    public string SetTypeOfDog(string typeOfDog)
+    {
+        TypeOfDog = typeOfDog;
+        Console.WriteLine(typeOfDog);
+        return typeOfDog;
+    }
 }
