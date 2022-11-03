@@ -1,7 +1,21 @@
 ﻿namespace OOP.Models
 {
     internal class Student
+
     {
+        private string FirstName;
+        private string LastName;
+
+        private double Age = 10;
+        private int Grade;  // the grade the student is in
+        private char Rank;
+        private float MathsGrade = 4; //Maths examination grade
+        private float EnglishGrade = 4; // English examination grade
+        private float BioGrade = 4; // Bio examination grade
+
+        private bool IsRepeating;
+        public Courses[] FavouriteCourses = { Courses.Biology, Courses.Maths };
+
         public Student()
         {
             FirstName = "Ion";
@@ -19,6 +33,13 @@
             return FirstName + " " + LastName;
         }
 
+        public int GetGrade()
+        {  
+            Grade = MathsGrade > 4.5 ? 5 : 4;
+            Console.WriteLine("MathsGrade is {0}", Grade);
+            return Grade;
+        }
+
         // Displays student's details.
         public void Display()
         {
@@ -27,6 +48,8 @@
             Console.WriteLine("Class: {0}-{1}", Grade, Rank);
             Console.WriteLine("Average grade: {0}", Average());
             Console.WriteLine("Repetent: {0}", IsRepeating ? "YES" : "NO");
+            Console.WriteLine("Grade is {0}", Grade);
+
 
             Console.Write("Favourites: ");
             foreach (Courses Course in FavouriteCourses) {
@@ -57,18 +80,7 @@
             return Avg;
         }
 
-        private string FirstName;
-        private string LastName;
-
-        private double Age = 10;
-        private int Grade;  // the grade the student is in
-        private char Rank; 
-        private float MathsGrade = 4; //Maths examination grade
-        private float EnglishGrade = 4; // English examination grade
-        private float BioGrade = 4; // Bio examination grade
-
-        private bool IsRepeating;
-        public Courses[] FavouriteCourses = { Courses.Biology, Courses.Maths };
+      
     }
 }
 public enum Courses

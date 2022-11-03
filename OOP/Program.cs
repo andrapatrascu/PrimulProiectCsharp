@@ -10,13 +10,24 @@ internal class Program
         var bullDog = new Dog
         {
             //set breed value
-            Breed = true
+            Breed = true,
+            Age = 12 , 
+            TypeOfDog = "Pechinez",
+
+           
         };
 
         Console.WriteLine(bullDog.Breed);// AFISEZ
 
         // access method of the Dog
+        var anothertypeofdog = bullDog.TypeOfDog;
         bullDog.Bark();
+        bullDog.SetTypeOfDog("Labrador");
+        Console.WriteLine(bullDog.TypeOfDog);
+        var anothertypeofdog2 = bullDog.TypeOfDog;
+
+
+
 
         var car = new Car();
         Console.WriteLine(car.Color);
@@ -53,6 +64,10 @@ internal class Program
 	    S1.Display();
 	    S2.Display();
 
+        int grade = S1.GetGrade();
+        S1.GetGrade();
+
+        //S1.GetFullName
 	    // Console.Beep();
 
 	    // Call Average() method on Student object S1.

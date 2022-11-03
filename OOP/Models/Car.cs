@@ -3,11 +3,12 @@
 internal class Car
 {
     public string Color = "red";
+    public string? Name;
     public int MaxSpeed;
     public CarType CarType;
     public int NumberOfDoors;
 
-    }
+}
 
     public enum CarType
     {
@@ -15,5 +16,5 @@ internal class Car
         Dacia,
         Mazda,
     }
-}
+
 
