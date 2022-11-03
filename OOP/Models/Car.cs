@@ -1,11 +1,11 @@
-﻿namespace OOP.Models
+﻿namespace OOP.Models;
+
+internal class Car
 {
-    class Car
-    {
-        public int Id { get; set; }
-        public string Color = "red";
-        public int MaxSpeed;
-        public CarType CarType;
+    public string Color = "red";
+    public int MaxSpeed;
+    public CarType CarType;
+    public int NumberOfDoors;
 
     }
 
