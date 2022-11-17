@@ -10,11 +10,9 @@ internal class Car
 
 }
 
-    public enum CarType
-    {
-        Toyota,
-        Dacia,
-        Mazda,
-    }
-
-
+public enum CarType
+{
+    Toyota,
+    Renault,
+    Mazda,
+}

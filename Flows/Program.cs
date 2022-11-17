@@ -493,7 +493,7 @@ Console.WriteLine(result80);
 
 */
 
-const int myNum = (int)Months.April;
+const int myNum = (int)YearMonths.April;
 Console.WriteLine(myNum);
 
 
