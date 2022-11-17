@@ -1,6 +1,6 @@
 ﻿namespace Flows.Enum;
 
-internal enum Months
+internal enum YearMonths
 {
     January,    // 0
     February,   // 1

@@ -10,7 +10,6 @@ internal class Dog
     public void Bark()
     {
         Console.WriteLine("Bark Bark !!");
-
     }
 
     public string SetTypeOfDog(string typeOfDog)
