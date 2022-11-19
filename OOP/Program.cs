@@ -73,6 +73,21 @@ internal class Program
         {
             Console.Write("{0} ", course);
         }
+
+        Console.WriteLine();
+
+        Employee employee1 = new Employee();//employee1 = is an object of Employee type
+        employee1._firstname = "Jane";//I assigned a value to the firstname field of the employee1 object
+
+        employee1.SetLastName("Costache");
+        employee1.SetOccupation(Occupation.SoftwareTester);
+
+        Employee TheMaid = new Employee();
+        TheMaid.SetName("Gugulina", "Aceausului");
+        TheMaid.SetOccupation(Occupation.ProjectManager);
+
+        employee1.Display();
+        TheMaid.Display();
     }
 }
 
