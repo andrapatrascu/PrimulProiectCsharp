@@ -10,7 +10,7 @@
     {
         public string? _firstname;
         private string? _lastname;
-        public int _age;
+        public static int _age;
         public Occupation? _occupation;
 
 
@@ -19,6 +19,10 @@
             _lastname = CevaNume;
         }
 
+        public static void SetAge(int Age)
+        {
+            _age = Age;
+        }
         public void SetName(string FirstName, string LastName)
         {
             _firstname = FirstName;

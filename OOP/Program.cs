@@ -4,8 +4,81 @@ namespace OOP;
 
 internal class Program
 {
+    public static void Greeting(string Name)
+    {
+        Console.WriteLine("Hello {0}", Name);
+    }
+
+    public static void Farewell()
+    {
+        Console.WriteLine("Good Bye!");
+    }
+
+    public static int Sum(int x, int y)
+    {
+        return x + y;
+    }
+
+    public static int CountSpaces(string text)
+    {
+        int count = 0;
+        string letter;
+
+        for (int i = 0; i < text.Length; i++)
+        {
+            letter = text.Substring(i, 1);
+
+            if (letter == " ")
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public static void DisplayArray(int[] IntegerArray)
+    {
+        for (int i = 0; i < IntegerArray.Length; i++)
+        {
+            Console.WriteLine("array[{0}] = {1}", i, IntegerArray[i]);
+        }
+    }
+    public static int Double(int number)
+    {
+        return number + number;
+    }
+
     private static void Main(string[] args)
     {
+        Greeting("Gigel");
+        Farewell();
+
+        Console.Write("Please enter the first number: ");
+        int x = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Please enter the second number: ");
+        int y = Convert.ToInt32(Console.ReadLine());
+
+        int sum = Sum(x, y);
+        Console.WriteLine("The sum is {0}", sum);
+
+        Console.Write("Please enter the text: ");
+        string text = Console.ReadLine();
+
+        int countOfSpaces = CountSpaces(text);
+        Console.WriteLine("The text contains {0} spaces.", countOfSpaces);
+
+
+        int[] Numbers = new int[5];
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.Write("Please enter the number {0}: ", i);
+            int K = Convert.ToInt32(Console.ReadLine());
+            Numbers[i] = K;
+        }
+        DisplayArray(Numbers);
+
         //create Dog object
         var bullDog = new Dog
         {
@@ -76,6 +149,8 @@ internal class Program
 
         Console.WriteLine();
 
+        Employee._age = 22;
+
         Employee employee1 = new Employee();//employee1 = is an object of Employee type
         employee1._firstname = "Jane";//I assigned a value to the firstname field of the employee1 object
 
@@ -86,8 +161,19 @@ internal class Program
         TheMaid.SetName("Gugulina", "Aceausului");
         TheMaid.SetOccupation(Occupation.ProjectManager);
 
+        Employee.SetAge(43);
+
         employee1.Display();
         TheMaid.Display();
+
+        Employee[] Employees = new Employee[5];
+        for (int i = 0; i < Employees.Length; ++i)
+        {
+            Employees[i] = new Employee();
+            Employees[i].SetName("Ion", "Vasilon");
+        }
+
+        Console.WriteLine("The End");
     }
 }
 
