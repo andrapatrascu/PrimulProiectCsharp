@@ -4,15 +4,55 @@ namespace OOP;
 
 internal class Program
 {
+    
+    public static void DisplayName(string fname, int age)
+    {
+        Console.WriteLine(fname + " is " + age);
+    }
+
+    public static void DisplayCountry(string country = "Norway")
+    {
+        Console.WriteLine(country);
+    }
+
+    public static void DisplayChild(string child1, string child2, string child3)
+    {
+        Console.WriteLine("The youngest child is: " + child2);
+    }
+
+
+    public static int Addition (int x)
+    {
+        return 5 + x;
+    }
+
+    public static int Addition2(int d, int e)
+    {
+        return d + e;
+    }
+
+    public static int PlusMethod( int v, int k)
+    {
+        return v + k;
+    }
+
+    public static double PlusMethod(double v, double k)
+    {
+        return v + k;
+    }
+
+
     public static void Greeting(string Name)
     {
         Console.WriteLine("Hello {0}", Name);
     }
 
+
     public static void Farewell()
     {
         Console.WriteLine("Good Bye!");
     }
+
 
     public static int Sum(int x, int y)
     {
@@ -79,6 +119,30 @@ internal class Program
         }
         DisplayArray(Numbers);
 
+        DisplayName("Liam", 5);
+        DisplayName("Jenny", 8);
+        DisplayName("Anja", 31);
+
+        DisplayCountry("Brazil");
+        DisplayCountry();
+        DisplayCountry("France");
+
+        Console.WriteLine(Addition(4));
+        // Console.WriteLine(Addition2(4,5));// sum between 2 parameters
+
+        int t = Addition2(25, 25);
+        Console.WriteLine("The sum is {0}",t);
+
+        DisplayChild(child3: "John", child1: "Mary", child2: "Keanu");
+
+
+        int myNum1 = PlusMethod(30, 31);
+        double myNum2 = PlusMethod(25.6, 36.7);
+        Console.WriteLine("The sum is {0}", myNum1);
+        Console.WriteLine("Int: " + myNum1);
+        Console.WriteLine("The sum is {0}", myNum2);
+        Console.WriteLine("Double: " + myNum1);
+
         //create Dog object
         var bullDog = new Dog
         {
@@ -94,6 +158,7 @@ internal class Program
         bullDog.Bark();
         bullDog.SetTypeOfDog("Labrador");
         Console.WriteLine(bullDog.TypeOfDog);
+        bullDog.LastName("Liam");//Liam=argument; the method LastName is called
 
 
         var car = new Car();
@@ -113,6 +178,16 @@ internal class Program
         car2.MaxSpeed = 200;
         Console.WriteLine(car2.Color);
         Console.WriteLine(car2.MaxSpeed);
+
+        Car Ford = new Car();
+        Ford.MaxSpeed = 300;
+        Ford.Color = "green";
+        Ford.Year = 1970;
+        Ford.Model = "Mustang";
+        Console.WriteLine(Ford.Color);
+        Console.WriteLine(Ford.Year);
+        Console.WriteLine(Ford.Model);
+        Ford.fullThrottle();//Call the method( accessed the method using . synthax)
 
         // Declare variable S1 of type Student and instantiate an object by calling the constructor(string, string)
         Student s1 = new Student("Gigi", "Kent");
