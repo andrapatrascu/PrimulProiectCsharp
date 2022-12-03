@@ -5,9 +5,9 @@ namespace OOP;
 internal class Program
 {
     
-    public static void DisplayName(string fname, int age)
+    public static void DisplayName(string firstName, int age)
     {
-        Console.WriteLine(fname + " is " + age);
+        Console.WriteLine(firstName + " is " + age);
     }
 
     public static void DisplayCountry(string country = "Norway")
@@ -26,7 +26,7 @@ internal class Program
         return 5 + x;
     }
 
-    public static int Addition2(int d, int e)
+    public static int Addition(int d, int e)
     {
         return d + e;
     }
@@ -130,7 +130,7 @@ internal class Program
         Console.WriteLine(Addition(4));
         // Console.WriteLine(Addition2(4,5));// sum between 2 parameters
 
-        int t = Addition2(25, 25);
+        int t = Addition(25, 25);
         Console.WriteLine("The sum is {0}",t);
 
         DisplayChild(child3: "John", child1: "Mary", child2: "Keanu");
