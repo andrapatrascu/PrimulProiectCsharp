@@ -14,20 +14,20 @@ namespace OOP.Models
         {
             _Name = Name;
             _totalStudents = NumberOfStudents;
-            _Teachers = new string[NumberOfTeachers]; // Alocare array cu NumberOfTeachers elemente
+            _Teachers = new string[NumberOfTeachers]; // Alocatting array with NumberOfTeachers elements
             _TeachersAdded = 0;
         }
 
         public School(string Name)
         {
             _Name = Name;
-            _Teachers = new string[NumberOfTeachers]; // Alocare array cu NumberOfTeachers elemente
+            _Teachers = new string[NumberOfTeachers]; // Alocartting array with NumberOfTeachers elements
             _TeachersAdded = 0;
         }
 
         public bool AddTeacher(string TeacherName)
         {
-            if (_TeachersAdded >= NumberOfTeachers) // Verifica daca mai este loc in array
+            if (_TeachersAdded >= NumberOfTeachers) // Check if there is still room in the array(Verifica daca mai este loc in array)
             {
                 return false;
             }

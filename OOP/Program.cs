@@ -139,8 +139,18 @@ internal class Program
 
         return;
 
+        //Using class School
 
+        Book book1 = new Book("Harry Potter", "JK Rowling", 400);      
+       
+        Book book2 = new Book("The rings of power", "Tolkien", 1000);
+        book2._Title = "Game of thrones";
 
+        Book book3 = new Book();
+
+        Console.WriteLine(book2._Title);
+
+       
         Greeting("Gigel");
         Farewell();
 
