@@ -15,9 +15,9 @@ internal class Program
         Console.WriteLine(country);
     }
 
-    public static void DisplayChild(string child1, string child2, string child3)
+    public static void DisplayChildren(string child1, string child2, string child3)
     {
-        Console.WriteLine("The youngest child is: " + child2);
+        Console.WriteLine("First child is {0), second child is {1}, third child is {2}: " , child2, child1, child3);
     }
 
 
@@ -91,6 +91,69 @@ internal class Program
 
     private static void Main(string[] args)
     {
+        // Using class School
+
+        School SchoolTV = new School("Traian Vuia");
+        School SchoolLR = new School("Liviu Rebreanu", 400);
+
+        string TeacherName = "Klaus";
+        bool Ok = SchoolLR.AddTeacher(TeacherName);
+        if (Ok)
+        {
+            Console.WriteLine("{0} was added", TeacherName);
+        }
+        else
+        {
+            Console.WriteLine("{0} was NOT added", TeacherName);
+        }
+
+        TeacherName = "Franz";
+        Ok = SchoolLR.AddTeacher(TeacherName);
+        if (Ok)
+        {
+            Console.WriteLine("{0} was added", TeacherName);
+        }
+        else
+        {
+            Console.WriteLine("{0} was NOT added", TeacherName);
+        }
+
+        TeacherName = "Jules";
+        Ok = SchoolLR.AddTeacher(TeacherName);
+        if (Ok)
+
+        {
+            Console.WriteLine("{0} was added", TeacherName);
+        }
+        else
+        {
+            Console.WriteLine("{0} was NOT added", TeacherName);
+        }
+
+        SchoolTV.AddTeacher("Michael Jackson");
+        SchoolTV.AddTeacher("Michael Payton");
+        SchoolTV.AddTeacher("Michael Jordan");
+
+        SchoolTV.DisplayTeachers();
+        SchoolLR.DisplayTeachers();
+
+        
+        //Using class Book
+
+        Book book1 = new Book("Harry Potter", "JK Rowling", 400, 3);      
+       
+        Book book2 = new Book("The rings of power", "Tolkien", 1000, 15);
+        book2.TitleOfTheBook = "Lord of the rings";
+
+        Book book3 = new Book();
+
+        Console.WriteLine(book1.HasRatings());
+        Console.WriteLine(book2.HasRatings());
+        Console.WriteLine(book1.TitleOfTheBook + " was written by " + book1._Author);
+        Console.WriteLine("Book name is {0} and the author is {1}", book2.TitleOfTheBook,book2._Author);
+
+        return;
+       
         Greeting("Gigel");
         Farewell();
 
@@ -133,7 +196,7 @@ internal class Program
         int t = Addition(25, 25);
         Console.WriteLine("The sum is {0}",t);
 
-        DisplayChild(child3: "John", child1: "Mary", child2: "Keanu");
+        DisplayChildren("Keanu", "Anna", "Oliver");
 
 
         int myNum1 = PlusMethod(30, 31);
@@ -249,6 +312,14 @@ internal class Program
         }
 
         Console.WriteLine("The End");
+
+
+
+
+
+
+
+
     }
 }
 
