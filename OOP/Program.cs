@@ -137,19 +137,22 @@ internal class Program
         SchoolTV.DisplayTeachers();
         SchoolLR.DisplayTeachers();
 
-        return;
+        
+        //Using class Book
 
-        //Using class School
-
-        Book book1 = new Book("Harry Potter", "JK Rowling", 400);      
+        Book book1 = new Book("Harry Potter", "JK Rowling", 400, 3);      
        
-        Book book2 = new Book("The rings of power", "Tolkien", 1000);
-        book2._Title = "Game of thrones";
+        Book book2 = new Book("The rings of power", "Tolkien", 1000, 15);
+        book2.TitleOfTheBook = "Lord of the rings";
 
         Book book3 = new Book();
 
-        Console.WriteLine(book2._Title);
+        Console.WriteLine(book1.HasRatings());
+        Console.WriteLine(book2.HasRatings());
+        Console.WriteLine(book1.TitleOfTheBook + " was written by " + book1._Author);
+        Console.WriteLine("Book name is {0} and the author is {1}", book2.TitleOfTheBook,book2._Author);
 
+        return;
        
         Greeting("Gigel");
         Farewell();
