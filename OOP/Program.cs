@@ -91,6 +91,61 @@ internal class Program
 
     private static void Main(string[] args)
     {
+        // Using class Person
+
+        int NumberOfPerson = 3;
+        Person[] persons = new Person[NumberOfPerson]; // Create Person array
+
+        for (int i = 0; i < NumberOfPerson; i++)
+        {
+            Console.Write("Enter name[{0}]: ", i);
+            string? Name = Console.ReadLine();
+            if (String.IsNullOrEmpty(Name))
+            {
+                i--;
+                continue;
+            }
+
+            persons[i] = new Person(Name);
+        }
+
+        for (int i = 0; i < NumberOfPerson; i++)
+        {
+            Console.WriteLine("Hello! My name is {0}", persons[i].GetName());
+        }
+
+        return;
+
+        // Using class Calculator
+
+
+        Console.Write("Enter 1st number: ");// read and convert to int
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter 2nd number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter 3rd number: ");
+        int num3 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter 4th number: ");
+        int num4 = Convert.ToInt32(Console.ReadLine());
+
+        Calculator Calc = new Calculator(num1, num2, num3, num4);
+
+        int OperationResult = 0;      
+        Calc.Add(out OperationResult);
+        Console.WriteLine("The result of the addition is: {0}", OperationResult);
+        Calc.Subtract(out OperationResult);
+        Console.WriteLine("The result of the substraction is: {0}", OperationResult);
+        Calc.Multiply(out OperationResult);
+        Console.WriteLine("The result of the multiplication is: {0}", OperationResult);
+        if (Calc.Division(out OperationResult))
+        {
+            Console.WriteLine("The result of the division is: {0}", OperationResult);
+        }
+        else
+        {
+            Console.WriteLine("Undefined operation, division by zero.");
+        }
+
         // Using class School
 
         School SchoolTV = new School("Traian Vuia");
