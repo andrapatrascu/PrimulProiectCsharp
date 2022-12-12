@@ -1,4 +1,6 @@
-﻿namespace OOP.Models
+﻿using OOP.Models.Enums;
+
+namespace OOP.Models
 {
     internal class Student
 
@@ -6,7 +8,7 @@
         private readonly string _firstName;
         private readonly string _lastName;
 
-        private readonly double _age = 10;
+        private const double Age = 10;
         private int _grade;  // the grade the student is in
         private char _rank;
         private float _mathsGrade = 4; //Maths examination grade
@@ -44,7 +46,7 @@
         public void Display()
         {
             Console.WriteLine("Full name: {0}", GetFullName());
-            Console.WriteLine("Age: {0}", _age);
+            Console.WriteLine("Age: {0}", Age);
             Console.WriteLine("Class: {0}-{1}", _grade, _rank);
             Console.WriteLine("Average grade: {0}", Average());
             Console.WriteLine("Repetent: {0}", _isRepeating ? "YES" : "NO");
@@ -77,19 +79,10 @@
         public float Average()
         {
             var avg = (_mathsGrade + _englishGrade + _bioGrade) / 3;
-            _isRepeating = avg < 5.0f ? true : false;
+            _isRepeating = avg < 5.0f;
             return avg;
         }
 
 
     }
 }
-
-
-public enum Courses
-{
-    English,
-    Maths,
-    Biology,
-}
-
