@@ -1,44 +1,43 @@
-﻿namespace OOP.Models
+﻿namespace OOP.Models;
+
+internal class Employee
 {
-    public enum Occupation
+    public string? Firstname;
+    private string? _lastname;
+    public static int Age;
+    public Occupation? Occupation;
+
+
+    public void SetLastName(string cevaNume)
     {
-        Developer,
-        ProjectManager,
-        SoftwareTester
+        _lastname = cevaNume;
     }
-    internal class Employee
+
+    public static void SetAge(int age)
     {
-        public string? _firstname;
-        private string? _lastname;
-        public static int _age;
-        public Occupation? _occupation;
-
-
-        public void SetLastName(string CevaNume)
-        {
-            _lastname = CevaNume;
-        }
-
-        public static void SetAge(int Age)
-        {
-            _age = Age;
-        }
-        public void SetName(string FirstName, string LastName)
-        {
-            _firstname = FirstName;
-            _lastname = LastName;
-        }
-
-        public void SetOccupation(Occupation Job) 
-        {
-            _occupation = Job;
-        }
-
-        public void Display()
-        {
-            Console.WriteLine("Nume: {0} {1}, occupation {2}", _firstname, _lastname, _occupation.ToString());
-        }
+        Age = age;
     }
+    public void SetName(string firstName, string lastName)
+    {
+        Firstname = firstName;
+        _lastname = lastName;
+    }
+
+    public void SetOccupation(Occupation job)
+    {
+        Occupation = job;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine("Nume: {0} {1}, occupation {2}", Firstname, _lastname, Occupation.ToString());
+    }
+
 }
 
-
+public enum Occupation
+{
+    Developer,
+    ProjectManager,
+    SoftwareTester
+}

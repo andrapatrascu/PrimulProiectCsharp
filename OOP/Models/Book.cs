@@ -1,37 +1,29 @@
-﻿using System;
+﻿namespace OOP.Models;
 
-
-namespace OOP.Models
+internal class Book
 {
-    internal class Book
+    public string? TitleOfTheBook;
+    public string? Author;
+    public int Pages;
+    public int Reviews;
+
+
+    public Book(string title, string author, int pages, int reviews)// public+name of the class
     {
-        public string? TitleOfTheBook;
-        public string? _Author;
-        public int _Pages;
-        public int _Reviews;
+        TitleOfTheBook = title;
+        Author = author;
+        Pages = pages;
+        Reviews = reviews;
+    }
 
+    public Book()
+    {
+        Console.WriteLine("From book contructor");
+        HasRatings();
+    }
 
-        public Book(string aTitle, string aAuthor, int aPages, int aReviews)// public+name of the class
-        {
-            TitleOfTheBook = aTitle;
-            _Author = aAuthor;
-            _Pages = aPages;
-            _Reviews = aReviews;
-        }
-
-        public Book()
-        {
-            Console.WriteLine("From book contructor");
-            HasRatings();
-        }
-
-        public bool HasRatings()
-        {
-            if (_Reviews > 5)
-            {
-                return true;
-            }
-            return false;
-        }
+    public bool HasRatings()
+    {
+        return Reviews > 5;
     }
 }

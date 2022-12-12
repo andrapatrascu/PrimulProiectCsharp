@@ -4,7 +4,7 @@ namespace OOP;
 
 internal class Program
 {
-    
+
     public static void DisplayName(string firstName, int age)
     {
         Console.WriteLine(firstName + " is " + age);
@@ -17,11 +17,11 @@ internal class Program
 
     public static void DisplayChildren(string child1, string child2, string child3)
     {
-        Console.WriteLine("First child is {0), second child is {1}, third child is {2}: " , child2, child1, child3);
+        Console.WriteLine("First child is {0), second child is {1}, third child is {2}: ", child2, child1, child3);
     }
 
 
-    public static int Addition (int x)
+    public static int Addition(int x)
     {
         return 5 + x;
     }
@@ -31,7 +31,7 @@ internal class Program
         return d + e;
     }
 
-    public static int PlusMethod( int v, int k)
+    public static int PlusMethod(int v, int k)
     {
         return v + k;
     }
@@ -42,9 +42,9 @@ internal class Program
     }
 
 
-    public static void Greeting(string Name)
+    public static void Greeting(string name)
     {
-        Console.WriteLine("Hello {0}", Name);
+        Console.WriteLine("Hello {0}", name);
     }
 
 
@@ -61,12 +61,11 @@ internal class Program
 
     public static int CountSpaces(string text)
     {
-        int count = 0;
-        string letter;
+        var count = 0;
 
-        for (int i = 0; i < text.Length; i++)
+        for (var i = 0; i < text.Length; i++)
         {
-            letter = text.Substring(i, 1);
+            var letter = text.Substring(i, 1);
 
             if (letter == " ")
             {
@@ -77,11 +76,11 @@ internal class Program
         return count;
     }
 
-    public static void DisplayArray(int[] IntegerArray)
+    public static void DisplayArray(int[] integerArray)
     {
-        for (int i = 0; i < IntegerArray.Length; i++)
+        for (var i = 0; i < integerArray.Length; i++)
         {
-            Console.WriteLine("array[{0}] = {1}", i, IntegerArray[i]);
+            Console.WriteLine("array[{0}] = {1}", i, integerArray[i]);
         }
     }
     public static int Double(int number)
@@ -93,94 +92,87 @@ internal class Program
     {
         // Using class School
 
-        School SchoolTV = new School("Traian Vuia");
-        School SchoolLR = new School("Liviu Rebreanu", 400);
+        var schoolTv = new School("Traian Vuia");
+        var schoolLr = new School("Liviu Rebreanu", 400);
 
-        string TeacherName = "Klaus";
-        bool Ok = SchoolLR.AddTeacher(TeacherName);
-        if (Ok)
+        var teacherName = "Klaus";
+        var ok = schoolLr.AddTeacher(teacherName);
+        Console.WriteLine(ok ? "{0} was added" : "{0} was NOT added", teacherName);
+
+        teacherName = "Franz";
+        ok = schoolLr.AddTeacher(teacherName);
+        if (ok)
         {
-            Console.WriteLine("{0} was added", TeacherName);
+            Console.WriteLine("{0} was added", teacherName);
         }
         else
         {
-            Console.WriteLine("{0} was NOT added", TeacherName);
+            Console.WriteLine("{0} was NOT added", teacherName);
         }
 
-        TeacherName = "Franz";
-        Ok = SchoolLR.AddTeacher(TeacherName);
-        if (Ok)
+        teacherName = "Jules";
+        ok = schoolLr.AddTeacher(teacherName);
+        if (ok)
+
         {
-            Console.WriteLine("{0} was added", TeacherName);
+            Console.WriteLine("{0} was added", teacherName);
         }
         else
         {
-            Console.WriteLine("{0} was NOT added", TeacherName);
+            Console.WriteLine("{0} was NOT added", teacherName);
         }
 
-        TeacherName = "Jules";
-        Ok = SchoolLR.AddTeacher(TeacherName);
-        if (Ok)
+        schoolTv.AddTeacher("Michael Jackson");
+        schoolTv.AddTeacher("Michael Payton");
+        schoolTv.AddTeacher("Michael Jordan");
 
-        {
-            Console.WriteLine("{0} was added", TeacherName);
-        }
-        else
-        {
-            Console.WriteLine("{0} was NOT added", TeacherName);
-        }
+        schoolTv.DisplayTeachers();
+        schoolLr.DisplayTeachers();
 
-        SchoolTV.AddTeacher("Michael Jackson");
-        SchoolTV.AddTeacher("Michael Payton");
-        SchoolTV.AddTeacher("Michael Jordan");
 
-        SchoolTV.DisplayTeachers();
-        SchoolLR.DisplayTeachers();
-
-        
         //Using class Book
 
-        Book book1 = new Book("Harry Potter", "JK Rowling", 400, 3);      
-       
-        Book book2 = new Book("The rings of power", "Tolkien", 1000, 15);
-        book2.TitleOfTheBook = "Lord of the rings";
+        var book1 = new Book("Harry Potter", "JK Rowling", 400, 3);
 
-        Book book3 = new Book();
+        var book2 = new Book("The rings of power", "Tolkien", 1000, 15)
+        {
+            TitleOfTheBook = "Lord of the rings"
+        };
 
         Console.WriteLine(book1.HasRatings());
         Console.WriteLine(book2.HasRatings());
-        Console.WriteLine(book1.TitleOfTheBook + " was written by " + book1._Author);
-        Console.WriteLine("Book name is {0} and the author is {1}", book2.TitleOfTheBook,book2._Author);
+        Console.WriteLine(book1.TitleOfTheBook + " was written by " + book1.Author);
+        Console.WriteLine("Book name is {0} and the author is {1}", book2.TitleOfTheBook, book2.Author);
 
-        return;
-       
+        return; //if this is called the next lines will not be executed
+
         Greeting("Gigel");
         Farewell();
 
         Console.Write("Please enter the first number: ");
-        int x = Convert.ToInt32(Console.ReadLine());
+        var x = Convert.ToInt32(Console.ReadLine());
         Console.Write("Please enter the second number: ");
-        int y = Convert.ToInt32(Console.ReadLine());
+        var y = Convert.ToInt32(Console.ReadLine());
 
-        int sum = Sum(x, y);
+        var sum = Sum(x, y);
         Console.WriteLine("The sum is {0}", sum);
 
         Console.Write("Please enter the text: ");
-        string text = Console.ReadLine();
+        var text = Console.ReadLine();
 
-        int countOfSpaces = CountSpaces(text);
+        var countOfSpaces = CountSpaces(text);
         Console.WriteLine("The text contains {0} spaces.", countOfSpaces);
 
 
-        int[] Numbers = new int[5];
+        var numbers = new int[5];
 
-        for (int i = 0; i < 5; i++)
+        for (var i = 0; i < 5; i++)
         {
             Console.Write("Please enter the number {0}: ", i);
-            int K = Convert.ToInt32(Console.ReadLine());
-            Numbers[i] = K;
+            var k = Convert.ToInt32(Console.ReadLine());
+            numbers[i] = k;
         }
-        DisplayArray(Numbers);
+        DisplayArray(numbers);
 
         DisplayName("Liam", 5);
         DisplayName("Jenny", 8);
@@ -193,14 +185,14 @@ internal class Program
         Console.WriteLine(Addition(4));
         // Console.WriteLine(Addition2(4,5));// sum between 2 parameters
 
-        int t = Addition(25, 25);
-        Console.WriteLine("The sum is {0}",t);
+        var t = Addition(25, 25);
+        Console.WriteLine("The sum is {0}", t);
 
         DisplayChildren("Keanu", "Anna", "Oliver");
 
 
-        int myNum1 = PlusMethod(30, 31);
-        double myNum2 = PlusMethod(25.6, 36.7);
+        var myNum1 = PlusMethod(30, 31);
+        var myNum2 = PlusMethod(25.6, 36.7);
         Console.WriteLine("The sum is {0}", myNum1);
         Console.WriteLine("Int: " + myNum1);
         Console.WriteLine("The sum is {0}", myNum2);
@@ -237,24 +229,24 @@ internal class Program
         Console.WriteLine(car.CarType);
 
 
-        Car car2 = new Car();
+        var car2 = new Car();
         car2.MaxSpeed = 200;
         Console.WriteLine(car2.Color);
         Console.WriteLine(car2.MaxSpeed);
 
-        Car Ford = new Car();
-        Ford.MaxSpeed = 300;
-        Ford.Color = "green";
-        Ford.Year = 1970;
-        Ford.Model = "Mustang";
-        Console.WriteLine(Ford.Color);
-        Console.WriteLine(Ford.Year);
-        Console.WriteLine(Ford.Model);
-        Ford.fullThrottle();//Call the method( accessed the method using . synthax)
+        var ford = new Car();
+        ford.MaxSpeed = 300;
+        ford.Color = "green";
+        ford.Year = 1970;
+        ford.Model = "Mustang";
+        Console.WriteLine(ford.Color);
+        Console.WriteLine(ford.Year);
+        Console.WriteLine(ford.Model);
+        ford.FullThrottle();//Call the method( accessed the method using . synthax)
 
         // Declare variable S1 of type Student and instantiate an object by calling the constructor(string, string)
-        Student s1 = new Student("Gigi", "Kent");
-        Student s2 = new Student();
+        var s1 = new Student("Gigi", "Kent");
+        var s2 = new Student();
 
         // Call(invoke) method SetClass().
         s1.SetClass(6, 'A');
@@ -269,14 +261,14 @@ internal class Program
         s1.Display();
         s2.Display();
 
-        int grade = s1.GetGrade();
+        var grade = s1.GetGrade();
         s1.GetGrade();
 
         //S1.GetFullName
         // Console.Beep();
 
         // Call Average() method on Student object S1.
-        float avg = s1.Average();
+        var avg = s1.Average();
         Console.WriteLine("Average: {0}", avg);
 
         Console.Write("Favourites(from outside): ");
@@ -287,39 +279,31 @@ internal class Program
 
         Console.WriteLine();
 
-        Employee._age = 22;
+        Employee.Age = 22;
 
-        Employee employee1 = new Employee();//employee1 = is an object of Employee type
-        employee1._firstname = "Jane";//I assigned a value to the firstname field of the employee1 object
+        var employee1 = new Employee();//employee1 = is an object of Employee type
+        employee1.Firstname = "Jane";//I assigned a value to the firstname field of the employee1 object
 
         employee1.SetLastName("Costache");
         employee1.SetOccupation(Occupation.SoftwareTester);
 
-        Employee TheMaid = new Employee();
-        TheMaid.SetName("Gugulina", "Aceausului");
-        TheMaid.SetOccupation(Occupation.ProjectManager);
+        var theMaid = new Employee();
+        theMaid.SetName("Gugulina", "Aceausului");
+        theMaid.SetOccupation(Occupation.ProjectManager);
 
         Employee.SetAge(43);
 
         employee1.Display();
-        TheMaid.Display();
+        theMaid.Display();
 
-        Employee[] Employees = new Employee[5];
-        for (int i = 0; i < Employees.Length; ++i)
+        var employees = new Employee[5];
+        for (var i = 0; i < employees.Length; ++i)
         {
-            Employees[i] = new Employee();
-            Employees[i].SetName("Ion", "Vasilon");
+            employees[i] = new Employee();
+            employees[i].SetName("Ion", "Vasilon");
         }
 
         Console.WriteLine("The End");
-
-
-
-
-
-
-
-
     }
 }
 
