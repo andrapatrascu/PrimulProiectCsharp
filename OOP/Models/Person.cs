@@ -3,15 +3,15 @@ namespace OOP.Models
 {
     internal class Person
     {
-       private string _Name;
+       private string _name;
 
         public Person(string Name)
         {
-            _Name = Name;
+            _name = Name;
         }
         public string GetName()
         {
-            return _Name;
+            return _name;
         }
     }
 }
