@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flows", "Flows\Flows.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{D1D8E7E7-0B5C-4525-8FA4-EE8DC48FCEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalRescue", "..\OOP2\AnimalRescue.csproj", "{18AE2ABB-AD1E-4ABE-8A46-F9EE2AACC175}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalRescue", "AnimalRescue\AnimalRescue.csproj", "{D0B7EB2A-5918-4E78-9FDE-B687FC834EF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{D1D8E7E7-0B5C-4525-8FA4-EE8DC48FCEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1D8E7E7-0B5C-4525-8FA4-EE8DC48FCEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1D8E7E7-0B5C-4525-8FA4-EE8DC48FCEC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18AE2ABB-AD1E-4ABE-8A46-F9EE2AACC175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18AE2ABB-AD1E-4ABE-8A46-F9EE2AACC175}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18AE2ABB-AD1E-4ABE-8A46-F9EE2AACC175}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18AE2ABB-AD1E-4ABE-8A46-F9EE2AACC175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B7EB2A-5918-4E78-9FDE-B687FC834EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B7EB2A-5918-4E78-9FDE-B687FC834EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B7EB2A-5918-4E78-9FDE-B687FC834EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B7EB2A-5918-4E78-9FDE-B687FC834EF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
