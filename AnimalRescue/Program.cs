@@ -13,6 +13,7 @@ Girl girl = new Girl(8, "blue");
 Console.WriteLine(girl.IsAnimalLover());
 girl.SetAnimalLoverValue(true);
 Console.WriteLine(girl.IsAnimalLover());
+girl.Name = "Blue";
 
 Father father = new Father();
 father.SetHeight(1.93f);
@@ -28,6 +29,12 @@ Gender gender = Gender.Male;
 veterinarian.SetGender(gender);
 veterinarian.SetGender(Gender.Female);
 Console.WriteLine("Veterinarian's gender is {0} and age is {1}", veterinarian.GetGender(), veterinarian.GetAge());
+
+AnimalShelter animalShelter = new AnimalShelter();
+animalShelter.NumberOfAnimals = 15;
+Console.WriteLine("Number of animals is {0} ", animalShelter.NumberOfAnimals);
+animalShelter.AdoptAnimal("dog", girl);
+
 
 
 

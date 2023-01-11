@@ -17,7 +17,7 @@
 
         public void SetAge(int age)
         {
-            this._age = age;
+            _age = age;
         }
 
         public int GetAge()
