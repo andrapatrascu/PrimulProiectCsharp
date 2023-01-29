@@ -5,7 +5,7 @@
         int _age = 7;
         string _hair = "red";
         bool _animalLover;
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public Girl(int age, string hair)
         {

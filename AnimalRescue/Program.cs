@@ -30,13 +30,21 @@ veterinarian.SetGender(gender);
 veterinarian.SetGender(Gender.Female);
 Console.WriteLine("Veterinarian's gender is {0} and age is {1}", veterinarian.GetGender(), veterinarian.GetAge());
 
-AnimalShelter animalShelter = new AnimalShelter();
-animalShelter.NumberOfAnimals = 15;
-Console.WriteLine("Number of animals is {0} ", animalShelter.NumberOfAnimals);
-animalShelter.AdoptAnimal("dog", girl);
+AnimalShelter animalShelter = new AnimalShelter(7);
+animalShelter.AddAnimal(AnimalType.Dog);
+animalShelter.AddAnimal(AnimalType.Cat);
+animalShelter.AddAnimal(AnimalType.Dog);
+animalShelter.AddAnimal(AnimalType.Mouse);
+animalShelter.AddAnimal(AnimalType.Dog);
+animalShelter.AddAnimal(AnimalType.Cat);
+animalShelter.AddAnimal(AnimalType.Bear);
 
+AnimalType animalType = AnimalType.Bear;
+Console.WriteLine("The type {0} {1}", animalType, animalShelter.AdoptAnimal(animalType) ? "exists" : "does not exist");
 
+animalType = AnimalType.Crocodile;
+Console.WriteLine("The type {0} {1}", animalType, animalShelter.AdoptAnimal(animalType) ? "exists" : "does not exist");
 
-
-
+animalType = AnimalType.Mouse;
+Console.WriteLine("The type {0} {1}", animalType, animalShelter.AdoptAnimal(animalType) ? "exists" : "does not exist");
 
