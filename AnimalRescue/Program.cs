@@ -23,15 +23,12 @@ Console.WriteLine("Father's height is {0}", father.GetHeight());
 int x = 40;
 
 Veterinarian veterinarian = new Veterinarian();
-veterinarian.SetAge(x);
-veterinarian.SetAge(34);
-Gender gender = Gender.Male;
-veterinarian.SetGender(gender);
-veterinarian.SetGender(Gender.Female);
-Console.WriteLine("Veterinarian's gender is {0} and age is {1}", veterinarian.GetGender(), veterinarian.GetAge());
+veterinarian.Age = 34;
+veterinarian.Gender = Gender.Male;
+Console.WriteLine("Veterinarian's gender is {0} and age is {1}", veterinarian.Gender, veterinarian.Age);
 
-AnimalShelter animalShelter = new AnimalShelter(7);
-animalShelter.AddAnimal(AnimalType.Dog);
+AnimalShelter animalShelter = new AnimalShelter(8);
+//animalShelter.AddAnimal(AnimalType.Dog);
 animalShelter.AddAnimal(AnimalType.Cat);
 animalShelter.AddAnimal(AnimalType.Dog);
 animalShelter.AddAnimal(AnimalType.Mouse);

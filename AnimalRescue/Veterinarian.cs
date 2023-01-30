@@ -2,34 +2,23 @@
 {
     internal class Veterinarian
     {
-        Gender _gender;
-        int _age;
+        public Gender Gender { get; set; }
+        public int Age { get; set; }
 
         public void SetGender(Gender gender)
         {
-            _gender = gender;
+            Gender = gender;
         }
 
-        public Gender GetGender()
-        {
-            return _gender;
-        }
 
-        public void SetAge(int age)
-        {
-            _age = age;
-        }
 
-        public int GetAge()
-        {
-            return _age;
-        }
+       
     }
 
     public enum Gender
     {
         Male,
-        Female        
+        Female
     }
 
 }
