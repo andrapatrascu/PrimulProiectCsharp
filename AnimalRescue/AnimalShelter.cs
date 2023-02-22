@@ -25,28 +25,57 @@
             _animalsCount = 0;
         }
 
-        public bool AddAnimal(AnimalType type)
+        public void AddAnimal(AnimalType type)
         {
             if (_animalsCount < NumberOfAnimals)
             {
                 _animals[_animalsCount] = new Animal(type);
                 _animalsCount++;
-                return true;
             }
-            return false;
+        }
+
+        public void AddAnimals(Animal[] Animals)
+        {
+            _animals = Animals;
+            _animalsCount = Animals.Length;
+        }
+
+        public Animal[] GetAnimals()
+        {
+            return _animals;
         }
 
         public bool AdoptAnimal(AnimalType animalType)
         {
             for (int i = 0; i < _animalsCount; ++i)
             {
+                if (_animals[i] == null)
+                {
+                    continue;
+                }
                 if (_animals[i].GetAnimalType() == animalType)
                 {
                     return true;
                 }
             }
             return false;
-        }       
+        }
+
+        public string AdoptSomeAnimal(AnimalType animalType)
+        {
+            for (int i = 0; i < _animalsCount; ++i)
+            {
+                if (_animals[i] == null)
+                {
+                    continue;
+                }
+                if (_animals[i].GetAnimalType() == animalType)
+                {
+                    return animalType.ToString();
+                }
+            }
+            return "";
+        }
 
     }
 }

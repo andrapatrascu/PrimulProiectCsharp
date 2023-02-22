@@ -10,9 +10,10 @@
             Gender = gender;
         }
 
-
-
-       
+        public bool CheckAnimal(Animal AnimalToCheck)
+        {
+            return AnimalToCheck.IsHappy();
+        }
     }
 
     public enum Gender
