@@ -20,7 +20,6 @@ father.SetHeight(1.93f);
 Console.WriteLine(father.GetHeight());
 Console.WriteLine("Father's height is {0}", father.GetHeight());
 
-int x = 40;
 
 Veterinarian veterinarian = new Veterinarian();
 veterinarian.Age = 34;
@@ -80,12 +79,23 @@ for (int i = 0; i < AnimalsFromShelter.Length; ++i)
 
 }
 
+
 Nurse nurse = new Nurse();
-nurse.SetTheAge(25);
-nurse.CallFullName("Anna", "Ball");
+nurse.SetNurseAge(25);
+nurse.SetFullName("Anna", "Ball");
 nurse.SetPositiveLevel(true);
 nurse.SetTestResults(2.44F, 5.66F, 7.74F);
-nurse.IsDriving('B');
-nurse.IsDialing(15000000000L);
-
+nurse.SetDrivingLicenceType('B');
+nurse.CallDoctor(15000000000L);
+nurse.SetDogMeasurements(1.02D, 5);
+nurse.DisplayFinishJob();
+int size = nurse.GetNurseShoesSize();
+nurse.ReadFullName("Anne","Boleyn");
+nurse.IsDrivingLicenceExpired();
+nurse.CalculateSum(2.5, 56.5);
+string work = nurse.GetOcupation();
+nurse.GetFirstLetterName();
+nurse.GetSecondLetter('n');
+nurse.GetMobilePhone();
+long phone = nurse.GetSecondPhone(15);
 
