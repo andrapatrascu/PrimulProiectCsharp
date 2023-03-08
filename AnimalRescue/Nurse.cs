@@ -57,7 +57,9 @@
 
         public string ReadFullName(string firstName, string lastName)
         {
-            return firstName + "" + lastName;
+            string convertedFirstname = firstName.ToUpper();
+            string convertedLastname = lastName.ToUpper();
+            return convertedFirstname + " " + convertedLastname ;
         }
 
         public string GetOcupation()
@@ -70,28 +72,40 @@
             return false;
         }
 
+        public bool IsMarried(string hubandname)
+        {
+            if (hubandname == "John")
+            {
+                return false;
+            }
+            return true;
+        }
+
         public double CalculateSum( double x, double y)
         {
             double sum = x + y;
             return sum;
         }
         
-        public char GetFirstLetterName()
+        public char GetFirstLetterFromName(string name)
         {
             return 'A';
         }
 
-        public char GetSecondLetter(char a)
+        public char GetSecondLetter(string letter)
         {
-            return a;
+            return letter[1];
         }
 
-        public long GetMobilePhone()
+        public string GetMobilePhone(int country, int prefix, int number)
         {
-            return 156478974124L;
+            string ConvertCountry = country.ToString();
+            string ConvertPrefix = prefix.ToString();
+            string ConvertNumber= number.ToString();
+            return ConvertCountry + " " + ConvertPrefix + " " + ConvertNumber;
         }
 
-        public long GetSecondPhone(long phone)
+        public long GetSecondPhone(int phone)
         {
             return phone;
         }

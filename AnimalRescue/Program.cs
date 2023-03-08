@@ -90,12 +90,23 @@ nurse.CallDoctor(15000000000L);
 nurse.SetDogMeasurements(1.02D, 5);
 nurse.DisplayFinishJob();
 int size = nurse.GetNurseShoesSize();
-nurse.ReadFullName("Anne","Boleyn");
+string fullname = nurse.ReadFullName("anne","boleyn");
+Console.WriteLine("Nurse full name is {0}", fullname);
 nurse.IsDrivingLicenceExpired();
+
+bool married = nurse.IsMarried("Vince");
+Console.WriteLine("Husband is {0}", married);
+married = nurse.IsMarried("John");
+Console.WriteLine("Husband is {0}", married);
+
+double sum = nurse.CalculateSum(2.5, 5.5);
+Console.WriteLine($"Nurse shoes size is {size}, and is married {married} and the sum is {sum}");
 nurse.CalculateSum(2.5, 56.5);
 string work = nurse.GetOcupation();
-nurse.GetFirstLetterName();
-nurse.GetSecondLetter('n');
-nurse.GetMobilePhone();
+char letter = nurse.GetSecondLetter("Godzilla");
+Console.WriteLine("Second letter is {0}", letter);
+string number = nurse.GetMobilePhone(424, 456, 678);
+Console.WriteLine("Phone number is  {0}", number);
 long phone = nurse.GetSecondPhone(15);
+
 
