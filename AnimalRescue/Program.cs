@@ -96,15 +96,19 @@ nurse.IsDrivingLicenceExpired();
 
 bool married = nurse.IsMarried("Vince");
 Console.WriteLine("Husband is {0}", married);
-married = nurse.IsMarried("John");
+married = nurse.IsMarried("");
 Console.WriteLine("Husband is {0}", married);
 
 double sum = nurse.CalculateSum(2.5, 5.5);
 Console.WriteLine($"Nurse shoes size is {size}, and is married {married} and the sum is {sum}");
 nurse.CalculateSum(2.5, 56.5);
 string work = nurse.GetOcupation();
-char letter = nurse.GetSecondLetter("Godzilla");
-Console.WriteLine("Second letter is {0}", letter);
+
+char secondletter = nurse.GetSecondLetter("Godzilla");
+Console.WriteLine("Second letter is {0}", secondletter);
+char firstNameCharacter = nurse.GetFirstLetterFromName("Max");
+Console.WriteLine("First letter is {0}", firstNameCharacter);
+
 string number = nurse.GetMobilePhone(424, 456, 678);
 Console.WriteLine("Phone number is  {0}", number);
 long phone = nurse.GetSecondPhone(15);

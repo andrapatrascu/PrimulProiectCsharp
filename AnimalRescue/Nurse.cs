@@ -74,7 +74,7 @@
 
         public bool IsMarried(string hubandname)
         {
-            if (hubandname == "John")
+            if (hubandname == "")
             {
                 return false;
             }
@@ -89,7 +89,7 @@
         
         public char GetFirstLetterFromName(string name)
         {
-            return 'A';
+            return name[0];
         }
 
         public char GetSecondLetter(string letter)
